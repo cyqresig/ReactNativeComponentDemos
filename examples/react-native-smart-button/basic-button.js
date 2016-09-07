@@ -30,14 +30,14 @@ export default class BasicButton extends Component {
           disabledStyle={{backgroundColor: '#DDDDDD', borderWidth: 0,}}
           disabledTextStyle={{color: '#BCBCBC'}}
         >
-          disabled (按钮禁用)
+          disabled
         </Button>
 
           <Button
             style={{margin: 10, height: 40, backgroundColor: 'red', borderRadius: 3, borderWidth: StyleSheet.hairlineWidth, borderColor: 'red', justifyContent: 'center',}}
             textStyle={{fontSize: 17, color: 'white'}}
           >
-            opacity all (按钮透明)
+            opacity all
           </Button>
 
           <Button
@@ -45,7 +45,7 @@ export default class BasicButton extends Component {
             style={{margin: 10, height: 40, backgroundColor: 'red', borderRadius: 3, borderWidth: StyleSheet.hairlineWidth, borderColor: 'red', justifyContent: 'center',}}
             textStyle={{fontSize: 17, color: 'white'}}
           >
-            opacity content (内容透明)
+            opacity content
           </Button>
 
           <Button
@@ -54,7 +54,7 @@ export default class BasicButton extends Component {
             style={{margin: 10, justifyContent: 'center', height: 40, backgroundColor: 'red', borderRadius: 3, borderWidth: StyleSheet.hairlineWidth, borderColor: 'red', justifyContent: 'center',}}
             textStyle={{fontSize: 17, color: 'white'}}
           >
-            highlight (背景高亮)
+            highlight
           </Button>
 
           <Button
@@ -63,7 +63,7 @@ export default class BasicButton extends Component {
             textStyle={{fontSize: 17,  color: 'white'}}
 
           >
-            blur for ios (模糊阴影)
+            blur for ios
           </Button>
 
       </ScrollView>

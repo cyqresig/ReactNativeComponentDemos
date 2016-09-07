@@ -170,7 +170,7 @@ let componentData = {
             component: gesturePassword,
         },
     },
-    'parabola (抛物线)': {
+    'parabola': {
         'parabola': {
             title: 'parabola',
             component: ParabolaDemo,

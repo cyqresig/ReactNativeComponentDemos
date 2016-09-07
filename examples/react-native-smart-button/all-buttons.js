@@ -47,14 +47,14 @@ class AllButton extends Component {
                     disabledStyle={{backgroundColor: '#DDDDDD', borderWidth: 0,}}
                     disabledTextStyle={{color: '#BCBCBC'}}
                 >
-                    disabled (按钮禁用)
+                    disabled
                 </Button>
 
                 <Button
                     style={{margin: 10, height: 40, backgroundColor: 'red', borderRadius: 3, borderWidth: StyleSheet.hairlineWidth, borderColor: 'red', justifyContent: 'center',}}
                     textStyle={{fontSize: 17, color: 'white'}}
                 >
-                    opacity all (按钮透明)
+                    opacity all
                 </Button>
 
                 <Button
@@ -62,7 +62,7 @@ class AllButton extends Component {
                     style={{margin: 10, height: 40, backgroundColor: 'red', borderRadius: 3, borderWidth: StyleSheet.hairlineWidth, borderColor: 'red', justifyContent: 'center',}}
                     textStyle={{fontSize: 17, color: 'white'}}
                 >
-                    opacity content (内容透明)
+                    opacity content
                 </Button>
 
                 <Button
@@ -71,7 +71,7 @@ class AllButton extends Component {
                     style={{margin: 10, justifyContent: 'center', height: 40, backgroundColor: 'red', borderRadius: 3, borderWidth: StyleSheet.hairlineWidth, borderColor: 'red', justifyContent: 'center',}}
                     textStyle={{fontSize: 17, color: 'white'}}
                 >
-                    highlight (背景高亮)
+                    highlight
                 </Button>
 
                 <Button
@@ -80,7 +80,7 @@ class AllButton extends Component {
                     textStyle={{fontSize: 17,  color: 'white'}}
 
                 >
-                    blur for ios (模糊阴影)
+                    blur for ios
                 </Button>
 
                 <Button
@@ -101,7 +101,7 @@ class AllButton extends Component {
                             })
                         }, 3000)
                     }}>
-                    loading (加载器)
+                    loading
                 </Button>
 
                 <Button
@@ -125,7 +125,7 @@ class AllButton extends Component {
                             })
                         }, 3000)
                     }}>
-                    loading (加载器+文字)
+                    loading text
                 </Button>
 
                 <Button
@@ -135,7 +135,7 @@ class AllButton extends Component {
                     textStyle={{fontSize: 17, color: 'white'}}
                 >
                     <Image source={image_liking} style={{width: 40, height: 40, marginRight: 3, }}/>
-                    icon (图标)
+                    icon
                 </Button>
 
                 <Button
@@ -143,7 +143,7 @@ class AllButton extends Component {
                     style={{margin: 10, justifyContent: 'center', height: 40, backgroundColor: 'red', borderRadius: 3, borderWidth: StyleSheet.hairlineWidth, borderColor: 'red', justifyContent: 'center',}}
                     textStyle={{fontSize: 17,  color: 'white'}}
                 >
-                    badge (徽章)
+                    badge
                     <Badge
                         style={{ backgroundColor: '#00AAEF', marginLeft: 6, }}
                         textStyle={{ color: '#fff', fontSize: 12, }}>
