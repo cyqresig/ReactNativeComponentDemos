@@ -15,7 +15,7 @@ import {
 
 import ReactNativeComponentList from './examples/ios/react-native-component-list'
 
-//import SplashScreen from 'react-native-smart-splash-screen'
+import SplashScreen from 'react-native-smart-splash-screen'
 
 class ReactNativeComponentDemos extends Component {
 
@@ -24,7 +24,7 @@ class ReactNativeComponentDemos extends Component {
   }
 
   componentDidMount () {
-    //SplashScreen.close('scale', 850, 500)
+    SplashScreen.close('scale', 850, 500)
   }
 
   render () {
