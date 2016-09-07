@@ -110,7 +110,7 @@ const styles = StyleSheet.create({
 })
 
 let componentData = {
-    'button (按钮)': {
+    'button': {
         'all-buttons': {
             title: 'all-buttons',
             component: AllButton,
@@ -132,7 +132,7 @@ let componentData = {
             component: LoadingButton,
         },
     },
-    'sudoku-grid (九宫格)': {
+    'sudoku-grid': {
         'sudoku-grid': {
             title: 'sudoku-grid',
             component: ThreeColumns,
