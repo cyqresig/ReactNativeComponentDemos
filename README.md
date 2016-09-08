@@ -1,6 +1,11 @@
 # ReactNativeComponentDemos
 Demos for react-native components of [react-native-component][1]
 
+## Preview
+
+![ReactNativeComponentDemos Ios Preview][100]
+![ReactNativeComponentDemos Android Preview][101]
+
 ## Installation
 
 *   `git clone https://github.com/cyqresig/ReactNativeComponentDemos.git`
@@ -42,3 +47,6 @@ Demos for react-native components of [react-native-component][1]
 [10]: https://github.com/react-native-component/react-native-smart-button
 [11]: https://github.com/react-native-component/react-native-smart-sudoku-grid
 [12]: https://github.com/react-native-component/react-native-smart-corner-label
+
+[100]: http://cyqresig.github.io/img/react-native-component-demos-preview-ios-v0.0.1.gif
+[101]: http://cyqresig.github.io/img/react-native-component-demos-preview-android-v0.0.1.gif
