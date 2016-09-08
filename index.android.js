@@ -11,80 +11,74 @@ import {
     Navigator,
     Text,
     TouchableOpacity,
-    NativeModules,
 } from 'react-native';
 
 import ReactNativeComponentList from './examples/android/react-native-component-list'
 
-//import SplashScreen from 'react-native-smart-splash-screen'
-
+import SplashScreen from 'react-native-smart-splash-screen'
 
 class ReactNativeComponentDemos extends Component {
 
-  // 构造
-  constructor(props, context) {
+  constructor (props, context) {
     super(props);
   }
 
   componentDidMount () {
-    //SplashScreen.close('scale', 1000, 500)
+    SplashScreen.close('scale', 1000, 500)
   }
 
-  render() {
+  render () {
     return (
         <Navigator style={styles.container}
                    initialRoute={{
-                      component: ReactNativeComponentList,
-                      title: 'React Native Component'
-                    }}
+              component: ReactNativeComponentList,
+                  title: 'React Native Component Demos'
+            }}
                    sceneStyle={styles.navigatorBg}
                    renderScene={(route, navigator) => {
-                        let Component = route.component;
-                        return (
-                          <Component
-                            navigator={navigator}
-                            {...route.passProps}
-                          />
-                        )
-                     }}
+              let Component = route.component;
+              return (
+                  <Component
+                      navigator={navigator}
+                      {...route.passProps}
+                    />
+              )}}
                    navigationBar={
-                      <Navigator.NavigationBar
-                        ref={(navigationBar) => {
-                          this.navigationBar = navigationBar
-                        }}
-                        routeMapper={NavigationBarRouteMapper}
-                        style={styles.navBar}
-                      />
-                    }
+                <Navigator.NavigationBar
+                    ref={(navigationBar) => {
+                      this.navigationBar = navigationBar
+                    }}
+                    routeMapper={NavigationBarRouteMapper}
+                    style={styles.navBar} /> }
         />
-    );
+    )
   }
 }
 
 let NavigationBarRouteMapper = {
 
-  //LeftButton: function(route, navigator, index, navState) {
-  //  if (index === 0) {
-  //    return null;
-  //  }
-  //
-  //  var previousRoute = navState.routeStack[index - 1];
-  //  return (
-  //      <TouchableOpacity
-  //          onPress={() => navigator.pop()}
-  //          style={styles.navBarLeftButton}>
-  //        <Text style={[styles.navBarText, styles.navBarButtonText]}>
-  //          返回
-  //        </Text>
-  //      </TouchableOpacity>
-  //  );
-  //},
+  LeftButton: function (route, navigator, index, navState) {
+    if (index === 0) {
+      return null;
+    }
 
-  RightButton: function(route, navigator, index, navState) {
+    var previousRoute = navState.routeStack[ index - 1 ];
+    return (
+        <TouchableOpacity
+            onPress={() => navigator.pop()}
+            style={styles.navBarLeftButton}>
+          <Text style={[styles.navBarText, styles.navBarButtonText]}>
+            back
+          </Text>
+        </TouchableOpacity>
+    );
+  },
+
+  RightButton: function (route, navigator, index, navState) {
     return null
   },
 
-  Title: function(route, navigator, index, navState) {
+  Title: function (route, navigator, index, navState) {
     return (
         <Text style={[styles.navBarText, styles.navBarTitleText]}>
           {route.title}
