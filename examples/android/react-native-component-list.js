@@ -235,7 +235,7 @@ export default class ReactNativeComponentList extends Component {
     render () {
         return (
             <View style={styles.container}>
-                <StatusBar barStyle={'light-content'} backgroundColor={'white'}/>
+                <StatusBar backgroundColor={'black'}/>
                 <View style={styles.header}>
                     <Text style={styles.headerTitle}>React Native Components</Text>
                 </View>
