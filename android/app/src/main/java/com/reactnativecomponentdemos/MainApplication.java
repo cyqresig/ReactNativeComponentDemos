@@ -14,7 +14,8 @@ import java.util.List;
 
 public class MainApplication extends Application implements ReactApplication {
 
-  private final ReactNativeHost mReactNativeHost = new ReactNativeHost(this) {
+//  private final ReactNativeHost mReactNativeHost = new ReactNativeHost(this) {
+  private ReactNativeHost mReactNativeHost = new ReactNativeHost(this) {
     @Override
     protected boolean getUseDeveloperSupport() {
       return BuildConfig.DEBUG;
@@ -27,6 +28,10 @@ public class MainApplication extends Application implements ReactApplication {
       );
     }
   };
+
+  public void setReactNativeHost(ReactNativeHost reactNativeHost) {
+    this.mReactNativeHost = reactNativeHost;
+  }
 
   @Override
   public ReactNativeHost getReactNativeHost() {

@@ -1,7 +1,6 @@
 {
   "name": "ReactNativeComponentDemos",
   "version": "0.0.1",
-  "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start"
   },
@@ -13,7 +12,7 @@
     "react-native-smart-corner-label": "^1.1.0",
     "react-native-smart-gesture-password": "^2.0.2",
     "react-native-smart-parabola": "^1.0.1",
-    "react-native-smart-pull-to-refresh-listview": "^1.0.5",
+    "react-native-smart-pull-to-refresh-listview": "^1.0.6",
     "react-native-smart-security-text": "^1.0.0",
     "react-native-smart-splash-screen": "^1.0.7",
     "react-native-smart-sudoku-grid": "^1.0.8",
