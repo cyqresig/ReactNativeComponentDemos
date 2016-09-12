@@ -1,5 +1,7 @@
 package com.reactnativecomponentdemos;
 
+import android.os.Bundle;
+
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
@@ -23,12 +25,8 @@ public class MainActivity extends ReactActivity {
         return "ReactNativeComponentDemos";
     }
 
-    /**
-     * A subclass may override this method if it needs to use a custom {@link ReactRootView}.
-     */
     @Override
-    protected ReactRootView createRootView() {
-
+    protected void onCreate(Bundle savedInstanceState) {
         MainApplication mainApplication=(MainApplication)this.getApplication();
         mainApplication.setReactNativeHost( new ReactNativeHost(mainApplication) {
             @Override
@@ -46,8 +44,7 @@ public class MainActivity extends ReactActivity {
             }
 
         });
-
-        return super.createRootView();
+        super.onCreate(savedInstanceState);
     }
 
 }
