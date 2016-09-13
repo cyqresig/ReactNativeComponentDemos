@@ -24,7 +24,7 @@ class ReactNativeComponentDemos extends Component {
   }
 
   componentDidMount () {
-    SplashScreen.close('scale', 850, 500)
+    SplashScreen.close(SplashScreen.animationType.scale, 850, 500)
   }
 
   render () {
