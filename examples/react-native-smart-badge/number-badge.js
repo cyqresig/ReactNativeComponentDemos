@@ -44,7 +44,7 @@ export default class NumberBadge extends Component {
                 </Badge>
 
                 <Button
-                    touchableType={'blur'}
+                    touchableType={Button.constants.touchableTypes.blur}
                     style={{marginTop: 10, width: 300, justifyContent: 'center', height: 40, backgroundColor: '#00AAEF', borderRadius: 3, borderWidth: StyleSheet.hairlineWidth, borderColor: '#00AAEF', justifyContent: 'center',}}
                     textStyle={{fontSize: 17,  color: 'white'}}
                     onPress={this._addNum}>

@@ -25,14 +25,14 @@ export default class TouchIdTest extends Component {
     return (
       <View style={{flex: 1, justifyContent: 'center', alignItems: 'center', }}>
         <Button
-          touchableType={'blur'}
+          touchableType={Button.constants.touchableTypes.blur}
           style={{marginVertical: 10, width: 300, justifyContent: 'center', height: 40, backgroundColor: 'red', borderRadius: 3, borderWidth: StyleSheet.hairlineWidth, borderColor: 'red', justifyContent: 'center',}}
           textStyle={{fontSize: 17,  color: 'white'}}
           onPress={this._isSupported}>
           verify if touchId is supported
         </Button>
         <Button
-          touchableType={'blur'}
+          touchableType={Button.constants.touchableTypes.blur}
           style={{marginVertical: 10, width: 300, justifyContent: 'center', height: 40, backgroundColor: 'red', borderRadius: 3, borderWidth: StyleSheet.hairlineWidth, borderColor: 'red', justifyContent: 'center',}}
           textStyle={{fontSize: 17,  color: 'white'}}
           onPress={this._trggerTouchId}>

@@ -54,7 +54,7 @@ export default class ParabolaDemo extends Component {
                          <Button
                          onLayout={ this._onLayout1.bind(this, 'key-1') }
                          onPress={this._onPressHandler_1.bind(this, 'key-1')}
-                         touchableType={'blur'}
+                         touchableType={Button.constants.touchableTypes.blur}
                          style={{position: 'absolute', left: 10, top: 10, justifyContent: 'center', width: 20, height: 20, backgroundColor: 'red', borderRadius: 10,  justifyContent: 'center',}}
                          textStyle={{position: 'relative', bottom: 1, fontSize: 17,  color: 'white'}}
 
@@ -64,7 +64,7 @@ export default class ParabolaDemo extends Component {
                          <Button
                          onLayout={ this._onLayout1.bind(this, 'key-2') }
                          onPress={this._onPressHandler_1.bind(this, 'key-2')}
-                         touchableType={'blur'}
+                         touchableType={Button.constants.touchableTypes.blur}
                          style={{position: 'absolute', left: 10, top: 210, justifyContent: 'center', width: 20, height: 20, backgroundColor: 'red', borderRadius: 10,  justifyContent: 'center',}}
                          textStyle={{position: 'relative', bottom: 1, fontSize: 17,  color: 'white'}}
 
@@ -74,7 +74,7 @@ export default class ParabolaDemo extends Component {
                          <Button
                          onLayout={ this._onLayout1.bind(this, 'key-3') }
                          onPress={this._onPressHandler_1.bind(this, 'key-3')}
-                         touchableType={'blur'}
+                         touchableType={Button.constants.touchableTypes.blur}
                          style={{position: 'absolute', left: 10, top: 410, justifyContent: 'center', width: 20, height: 20, backgroundColor: 'red', borderRadius: 10,  justifyContent: 'center',}}
                          textStyle={{position: 'relative', bottom: 1, fontSize: 17,  color: 'white'}}
 
@@ -86,7 +86,7 @@ export default class ParabolaDemo extends Component {
                          <Button
                          onLayout={ this._onLayout1.bind(this, 'key-4') }
                          onPress={this._onPressHandler_1.bind(this, 'key-4')}
-                         touchableType={'blur'}
+                         touchableType={Button.constants.touchableTypes.blur}
                          style={{position: 'absolute', left: 10, top: deviceHeight - 160, justifyContent: 'center', width: 20, height: 20, backgroundColor: 'red', borderRadius: 10,  justifyContent: 'center',}}
                          textStyle={{position: 'relative', bottom: 1, fontSize: 17,  color: 'white'}}
 
@@ -98,7 +98,7 @@ export default class ParabolaDemo extends Component {
                          <Button
                          onLayout={ this._onLayout2.bind(this, 'key-5') }
                          onPress={this._onPressHandler_2.bind(this, 'key-5')}
-                         touchableType={'blur'}
+                         touchableType={Button.constants.touchableTypes.blur}
                          style={{position: 'absolute', right: 10, top: 10, justifyContent: 'center', width: 20, height: 20, backgroundColor: '#00AAEF', borderRadius: 10,  justifyContent: 'center',}}
                          textStyle={{position: 'relative', bottom: 1, fontSize: 17,  color: 'white'}}
 
@@ -108,7 +108,7 @@ export default class ParabolaDemo extends Component {
                          <Button
                          onLayout={ this._onLayout2.bind(this, 'key-6') }
                          onPress={this._onPressHandler_2.bind(this, 'key-6')}
-                         touchableType={'blur'}
+                         touchableType={Button.constants.touchableTypes.blur}
                          style={{position: 'absolute', right: 10, top: 210, justifyContent: 'center', width: 20, height: 20, backgroundColor: '#00AAEF', borderRadius: 10,  justifyContent: 'center',}}
                          textStyle={{position: 'relative', bottom: 1, fontSize: 17,  color: 'white'}}
 
@@ -118,7 +118,7 @@ export default class ParabolaDemo extends Component {
                          <Button
                          onLayout={ this._onLayout2.bind(this, 'key-7') }
                          onPress={this._onPressHandler_2.bind(this, 'key-7')}
-                         touchableType={'blur'}
+                         touchableType={Button.constants.touchableTypes.blur}
                          style={{position: 'absolute', right: 10, top: 410, justifyContent: 'center', width: 20, height: 20, backgroundColor: '#00AAEF', borderRadius: 10,  justifyContent: 'center',}}
                          textStyle={{position: 'relative', bottom: 1, fontSize: 17,  color: 'white'}}
 
@@ -128,7 +128,7 @@ export default class ParabolaDemo extends Component {
                          <Button
                          onLayout={ this._onLayout2.bind(this, 'key-8') }
                          onPress={this._onPressHandler_2.bind(this, 'key-8')}
-                         touchableType={'blur'}
+                         touchableType={Button.constants.touchableTypes.blur}
                          style={{position: 'absolute', right: 10, top: deviceHeight - 150, justifyContent: 'center', width: 20, height: 20, backgroundColor: '#00AAEF', borderRadius: 10,  justifyContent: 'center',}}
                          textStyle={{position: 'relative', bottom: 1, fontSize: 17,  color: 'white'}}
 
@@ -254,7 +254,7 @@ export default class ParabolaDemo extends Component {
  <Button
  onLayout={ this._onLayout1.bind(this, 'key-4-1') }
  onPress={this._onPressHandler_1.bind(this, 'key-4-1')}
- touchableType={'blur'}
+ touchableType={Button.constants.touchableTypes.blur}
  style={{position: 'absolute', left: 10, top: deviceHeight - 80, justifyContent: 'center', width: 20, height: 20, backgroundColor: 'red', borderRadius: 10,  justifyContent: 'center',}}
  textStyle={{position: 'relative', bottom: 1, fontSize: 17,  color: 'white'}}
 
@@ -268,7 +268,7 @@ export default class ParabolaDemo extends Component {
  <Button
  onLayout={ this._onLayout1.bind(this, 'key-1') }
  onPress={this._onPressHandler_1.bind(this, 'key-1')}
- touchableType={'blur'}
+ touchableType={Button.constants.touchableTypes.blur}
  style={{position: 'absolute', left: 10, top: 10, justifyContent: 'center', width: 20, height: 20, backgroundColor: 'red', borderRadius: 10,  justifyContent: 'center',}}
  textStyle={{position: 'relative', bottom: 1, fontSize: 17,  color: 'white'}}
 
@@ -278,7 +278,7 @@ export default class ParabolaDemo extends Component {
  <Button
  onLayout={ this._onLayout1.bind(this, 'key-2') }
  onPress={this._onPressHandler_1.bind(this, 'key-2')}
- touchableType={'blur'}
+ touchableType={Button.constants.touchableTypes.blur}
  style={{position: 'absolute', left: 10, top: 210, justifyContent: 'center', width: 20, height: 20, backgroundColor: 'red', borderRadius: 10,  justifyContent: 'center',}}
  textStyle={{position: 'relative', bottom: 1, fontSize: 17,  color: 'white'}}
 
@@ -288,7 +288,7 @@ export default class ParabolaDemo extends Component {
  <Button
  onLayout={ this._onLayout1.bind(this, 'key-3') }
  onPress={this._onPressHandler_1.bind(this, 'key-3')}
- touchableType={'blur'}
+ touchableType={Button.constants.touchableTypes.blur}
  style={{position: 'absolute', left: 10, top: 410, justifyContent: 'center', width: 20, height: 20, backgroundColor: 'red', borderRadius: 10,  justifyContent: 'center',}}
  textStyle={{position: 'relative', bottom: 1, fontSize: 17,  color: 'white'}}
 
@@ -300,7 +300,7 @@ export default class ParabolaDemo extends Component {
  <Button
  onLayout={ this._onLayout1.bind(this, 'key-4') }
  onPress={this._onPressHandler_1.bind(this, 'key-4')}
- touchableType={'blur'}
+ touchableType={Button.constants.touchableTypes.blur}
  style={{position: 'absolute', left: 10, top: deviceHeight - 160, justifyContent: 'center', width: 20, height: 20, backgroundColor: 'red', borderRadius: 10,  justifyContent: 'center',}}
  textStyle={{position: 'relative', bottom: 1, fontSize: 17,  color: 'white'}}
 
@@ -312,7 +312,7 @@ export default class ParabolaDemo extends Component {
  <Button
  onLayout={ this._onLayout2.bind(this, 'key-5') }
  onPress={this._onPressHandler_2.bind(this, 'key-5')}
- touchableType={'blur'}
+ touchableType={Button.constants.touchableTypes.blur}
  style={{position: 'absolute', right: 10, top: 10, justifyContent: 'center', width: 20, height: 20, backgroundColor: '#00AAEF', borderRadius: 10,  justifyContent: 'center',}}
  textStyle={{position: 'relative', bottom: 1, fontSize: 17,  color: 'white'}}
 
@@ -322,7 +322,7 @@ export default class ParabolaDemo extends Component {
  <Button
  onLayout={ this._onLayout2.bind(this, 'key-6') }
  onPress={this._onPressHandler_2.bind(this, 'key-6')}
- touchableType={'blur'}
+ touchableType={Button.constants.touchableTypes.blur}
  style={{position: 'absolute', right: 10, top: 210, justifyContent: 'center', width: 20, height: 20, backgroundColor: '#00AAEF', borderRadius: 10,  justifyContent: 'center',}}
  textStyle={{position: 'relative', bottom: 1, fontSize: 17,  color: 'white'}}
 
@@ -332,7 +332,7 @@ export default class ParabolaDemo extends Component {
  <Button
  onLayout={ this._onLayout2.bind(this, 'key-7') }
  onPress={this._onPressHandler_2.bind(this, 'key-7')}
- touchableType={'blur'}
+ touchableType={Button.constants.touchableTypes.blur}
  style={{position: 'absolute', right: 10, top: 410, justifyContent: 'center', width: 20, height: 20, backgroundColor: '#00AAEF', borderRadius: 10,  justifyContent: 'center',}}
  textStyle={{position: 'relative', bottom: 1, fontSize: 17,  color: 'white'}}
 
@@ -342,7 +342,7 @@ export default class ParabolaDemo extends Component {
  <Button
  onLayout={ this._onLayout2.bind(this, 'key-8') }
  onPress={this._onPressHandler_2.bind(this, 'key-8')}
- touchableType={'blur'}
+ touchableType={Button.constants.touchableTypes.blur}
  style={{position: 'absolute', right: 10, top: deviceHeight - 150, justifyContent: 'center', width: 20, height: 20, backgroundColor: '#00AAEF', borderRadius: 10,  justifyContent: 'center',}}
  textStyle={{position: 'relative', bottom: 1, fontSize: 17,  color: 'white'}}
 
