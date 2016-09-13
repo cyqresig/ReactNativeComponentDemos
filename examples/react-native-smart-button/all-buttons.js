@@ -18,22 +18,18 @@ import {
     Platform,
 } from 'react-native'
 
+import TimerEnhance from 'react-native-smart-timer-enhance'
 import Button from 'react-native-smart-button'
 import image_liking from '../images/liking.png'
 import Badge from 'react-native-smart-badge'
-
-import TimerEnhance from 'react-native-smart-timer-enhance'
 
 class AllButton extends Component {
 
     // 构造
     constructor (props) {
-        super(props);
+        super(props)
         // 初始状态
-        this.state = {
-            btn_1_isLoading: false,
-            btn_2_isLoading: false,
-        };
+        this.state = {}
     }
 
     render () {
@@ -47,66 +43,68 @@ class AllButton extends Component {
                     disabledStyle={{backgroundColor: '#DDDDDD', borderWidth: 0,}}
                     disabledTextStyle={{color: '#BCBCBC'}}
                 >
-                    disabled
+                    disabled (按钮禁用)
                 </Button>
 
                 <Button
                     style={{margin: 10, height: 40, backgroundColor: 'red', borderRadius: 3, borderWidth: StyleSheet.hairlineWidth, borderColor: 'red', justifyContent: 'center',}}
                     textStyle={{fontSize: 17, color: 'white'}}
                 >
-                    opacity all
+                    opacity all (按钮透明)
                 </Button>
 
                 <Button
-                    touchableType={'opacityContent'}
+                    touchableType={Button.constants.touchableTypes.fadeContent}
                     style={{margin: 10, height: 40, backgroundColor: 'red', borderRadius: 3, borderWidth: StyleSheet.hairlineWidth, borderColor: 'red', justifyContent: 'center',}}
                     textStyle={{fontSize: 17, color: 'white'}}
                 >
-                    opacity content
+                    opacity content (内容透明)
                 </Button>
 
                 <Button
-                    touchableType={'highlight'}
+                    touchableType={Button.constants.touchableTypes.highlight}
                     underlayColor={'#C90000'}
                     style={{margin: 10, justifyContent: 'center', height: 40, backgroundColor: 'red', borderRadius: 3, borderWidth: StyleSheet.hairlineWidth, borderColor: 'red', justifyContent: 'center',}}
                     textStyle={{fontSize: 17, color: 'white'}}
                 >
-                    highlight
+                    highlight (背景高亮)
                 </Button>
 
                 <Button
-                    touchableType={'blur'}
+                    touchableType={Button.constants.touchableTypes.blur}
                     style={{margin: 10, justifyContent: 'center', height: 40, backgroundColor: 'red', borderRadius: 3, borderWidth: StyleSheet.hairlineWidth, borderColor: 'red', justifyContent: 'center',}}
                     textStyle={{fontSize: 17,  color: 'white'}}
 
                 >
-                    blur for ios
+                    blur for ios (模糊阴影)
                 </Button>
 
                 <Button
-                    isLoading={this.state.btn_1_isLoading}
-                    touchableType={'opacity'}
+                    ref={ component => this._button_1 = component }
+                    touchableType={Button.constants.touchableTypes.fade}
                     style={{margin: 10, height: 40, backgroundColor: 'red', borderRadius: 3, borderWidth: StyleSheet.hairlineWidth, borderColor: 'red', justifyContent: 'center',}}
                     textStyle={{fontSize: 17, color: 'white'}}
                     loadingComponent={
                         this._renderActivityIndicator()
                     }
                     onPress={ () => {
-                        this.setState({
-                            btn_1_isLoading: true
+                        this._button_1.setState({
+                            loading: true,
+                            //disabled: true,
                         })
                         this.setTimeout( () => {
-                            this.setState({
-                                btn_1_isLoading: false
+                            this._button_1.setState({
+                                loading: false,
+                                //disabled: false
                             })
                         }, 3000)
                     }}>
-                    loading
+                    loading (加载器)
                 </Button>
 
                 <Button
-                    isLoading={this.state.btn_2_isLoading}
-                    touchableType={'opacityContent'}
+                    ref={ component => this._button_2 = component }
+                    touchableType={Button.constants.touchableTypes.fadeContent}
                     style={{margin: 10, height: 40, backgroundColor: 'red', borderRadius: 3, borderWidth: StyleSheet.hairlineWidth, borderColor: 'red', justifyContent: 'center',}}
                     textStyle={{fontSize: 17, color: 'white'}}
                     loadingComponent={
@@ -116,34 +114,36 @@ class AllButton extends Component {
                             </View>
                     }
                     onPress={ () => {
-                        this.setState({
-                            btn_2_isLoading: true
+                        this._button_2.setState({
+                            loading: true,
+                            //disabled: true,
                         })
                         this.setTimeout( () => {
-                            this.setState({
-                                btn_2_isLoading: false
+                            this._button_2.setState({
+                                loading: false,
+                                //disabled: false
                             })
                         }, 3000)
                     }}>
-                    loading text
+                    loading (加载器+文字)
                 </Button>
 
                 <Button
-                    touchableType={'highlight'}
+                    touchableType={Button.constants.touchableTypes.highlight}
                     underlayColor={'#C90000'}
                     style={{margin: 10, justifyContent: 'center', height: 40, backgroundColor: 'red', borderRadius: 3, borderWidth: StyleSheet.hairlineWidth, borderColor: 'red', justifyContent: 'center',}}
                     textStyle={{fontSize: 17, color: 'white'}}
                 >
                     <Image source={image_liking} style={{width: 40, height: 40, marginRight: 3, }}/>
-                    icon
+                    icon (图标)
                 </Button>
 
                 <Button
-                    touchableType={'blur'}
+                    touchableType={Button.constants.touchableTypes.blur}
                     style={{margin: 10, justifyContent: 'center', height: 40, backgroundColor: 'red', borderRadius: 3, borderWidth: StyleSheet.hairlineWidth, borderColor: 'red', justifyContent: 'center',}}
                     textStyle={{fontSize: 17,  color: 'white'}}
                 >
-                    badge
+                    badge (徽章)
                     <Badge
                         style={{ backgroundColor: '#00AAEF', marginLeft: 6, }}
                         textStyle={{ color: '#fff', fontSize: 12, }}>

@@ -19,10 +19,9 @@ import {
     Platform,
 } from 'react-native'
 
+import TimerEnhance from 'react-native-smart-timer-enhance'
 import Button from 'react-native-smart-button'
 import image_liking from '../images/liking.png'
-
-import TimerEnhance from 'react-native-smart-timer-enhance'
 
 class LoadingButton extends Component {
 //<Image source={image_liking} style={{width: 40, height: 40, marginRight: 3, }}/>
@@ -31,11 +30,7 @@ class LoadingButton extends Component {
     constructor (props) {
         super(props)
         // 初始状态
-        this.state = {
-            btn_1_isLoading: false,
-            btn_2_isLoading: false,
-            btn_3_isLoading: false,
-        }
+        this.state = {}
     }
 
     render () {
@@ -43,20 +38,22 @@ class LoadingButton extends Component {
             <ScrollView style={{flex: 1, marginTop: 20 + 44, }}>
 
                 <Button
-                    isLoading={this.state.btn_1_isLoading}
-                    touchableType={'opacity'}
+                    ref={ component => this._button_1 = component }
+                    touchableType={Button.constants.touchableTypes.fade}
                     style={{margin: 10, height: 40, backgroundColor: 'red', borderRadius: 3, borderWidth: StyleSheet.hairlineWidth, borderColor: 'red', justifyContent: 'center',}}
                     textStyle={{fontSize: 17, color: 'white'}}
                     loadingComponent={
                         this._renderActivityIndicator()
                     }
                     onPress={ () => {
-                        this.setState({
-                            btn_1_isLoading: true
+                        this._button_1.setState({
+                            loading: true,
+                            //disabled: true,
                         })
                         this.setTimeout( () => {
-                            this.setState({
-                                btn_1_isLoading: false
+                            this._button_1.setState({
+                                loading: false,
+                                //disabled: false
                             })
                         }, 3000)
                     }}>
@@ -64,8 +61,8 @@ class LoadingButton extends Component {
                 </Button>
 
                 <Button
-                    isLoading={this.state.btn_2_isLoading}
-                    touchableType={'opacity'}
+                    ref={ component => this._button_2 = component }
+                    touchableType={Button.constants.touchableTypes.fade}
                     style={{margin: 10, height: 40, backgroundColor: 'red', borderRadius: 3, borderWidth: StyleSheet.hairlineWidth, borderColor: 'red', justifyContent: 'center',}}
                     textStyle={{fontSize: 17, color: 'white'}}
                     loadingComponent={
@@ -75,12 +72,14 @@ class LoadingButton extends Component {
                             </View>
                     }
                     onPress={ () => {
-                        this.setState({
-                            btn_2_isLoading: true
+                        this._button_2.setState({
+                            loading: true,
+                            //disabled: true,
                         })
                         this.setTimeout( () => {
-                            this.setState({
-                                btn_2_isLoading: false
+                            this._button_2.setState({
+                                loading: false,
+                                //disabled: false
                             })
                         }, 3000)
                     }}>
@@ -88,8 +87,8 @@ class LoadingButton extends Component {
                 </Button>
 
                 <Button
-                    isLoading={this.state.btn_3_isLoading}
-                    touchableType={'opacity'}
+                    ref={ component => this._button_3 = component }
+                    touchableType={Button.constants.touchableTypes.fade}
                     style={{margin: 10, height: 40, backgroundColor: 'red', borderRadius: 3, borderWidth: StyleSheet.hairlineWidth, borderColor: 'red', justifyContent: 'center',}}
                     textStyle={{fontSize: 17, color: 'white'}}
                     loadingComponent={
@@ -98,12 +97,14 @@ class LoadingButton extends Component {
                             </View>
                     }
                     onPress={ () => {
-                        this.setState({
-                            btn_3_isLoading: true
+                        this._button_3.setState({
+                            loading: true,
+                            //disabled: true,
                         })
                         this.setTimeout( () => {
-                            this.setState({
-                                btn_3_isLoading: false
+                            this._button_3.setState({
+                                loading: false,
+                                //disabled: false
                             })
                         }, 3000)
                     }}>

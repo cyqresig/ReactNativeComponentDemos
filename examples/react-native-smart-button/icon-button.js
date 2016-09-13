@@ -24,7 +24,7 @@ export default class BasicButton extends Component {
       <ScrollView style={{flex: 1, marginTop: 20 + 44, }}>
 
         <Button
-          touchableType={'opacity'}
+          touchableType={Button.constants.touchableTypes.fade}
           style={{margin: 10, height: 40, backgroundColor: 'red', borderRadius: 3, borderWidth: StyleSheet.hairlineWidth, borderColor: 'red', justifyContent: 'center',}}
           textStyle={{fontSize: 17, color: 'white'}}
         >
@@ -33,7 +33,7 @@ export default class BasicButton extends Component {
         </Button>
 
         <Button
-          touchableType={'opacityContent'}
+          touchableType={Button.constants.touchableTypes.fadeContent}
           style={{margin: 10, height: 40, backgroundColor: 'red', borderRadius: 3, borderWidth: StyleSheet.hairlineWidth, borderColor: 'red', justifyContent: 'center',}}
           textStyle={{fontSize: 17, color: 'white'}}
         >
@@ -42,7 +42,7 @@ export default class BasicButton extends Component {
         </Button>
 
         <Button
-          touchableType={'highlight'}
+          touchableType={Button.constants.touchableTypes.highlight}
           underlayColor={'#C90000'}
           style={{margin: 10, justifyContent: 'center', height: 40, backgroundColor: 'red', borderRadius: 3, borderWidth: StyleSheet.hairlineWidth, borderColor: 'red', justifyContent: 'center',}}
           textStyle={{fontSize: 17, color: 'white'}}
@@ -52,7 +52,7 @@ export default class BasicButton extends Component {
         </Button>
 
         <Button
-          touchableType={'blur'}
+          touchableType={Button.constants.touchableTypes.blur}
           style={{margin: 10, justifyContent: 'center', height: 40, backgroundColor: 'red', borderRadius: 3, borderWidth: StyleSheet.hairlineWidth, borderColor: 'red', justifyContent: 'center',}}
           textStyle={{fontSize: 17,  color: 'white'}}
         >
