@@ -5,14 +5,12 @@ import android.os.Bundle;
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
-import com.facebook.react.ReactRootView;
 import com.facebook.react.shell.MainReactPackage;
+import com.reactnativecomponent.splashscreen.RCTSplashScreenPackage;
+import com.reactnativecomponent.swiperefreshlayout.RCTSwipeRefreshLayoutPackage;
 
 import java.util.Arrays;
 import java.util.List;
-
-import com.reactnativecomponent.splashscreen.RCTSplashScreenPackage;    //import package
-import com.reactnativecomponent.swiperefreshlayout.RCTSwipeRefreshLayoutPackage;    //import package
 
 public class MainActivity extends ReactActivity {
 
