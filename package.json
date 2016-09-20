@@ -33,6 +33,7 @@
     "react-native-smart-splash-screen": "^1.1.2",
     "react-native-smart-sudoku-grid": "^1.0.9",
     "react-native-smart-timer-enhance": "^1.0.2",
+    "react-native-smart-toast": "^1.0.0",
     "react-native-smart-touch-id": "^1.0.4"
   }
 }
