@@ -38,6 +38,7 @@ import PullToRefreshListViewDemo3 from '../react-native-smart-pull-to-refresh-li
 import PullToRefreshListViewDemo4 from '../react-native-smart-pull-to-refresh-listview/react-native-smart-pull-to-refresh-listview-demo4'
 import PullToRefreshListViewDemo5 from '../react-native-smart-pull-to-refresh-listview/react-native-smart-pull-to-refresh-listview-demo5'
 import PullToRefreshListViewDemo6 from '../react-native-smart-pull-to-refresh-listview/react-native-smart-pull-to-refresh-listview-demo6'
+import Toast from '../react-native-smart-toast/toast-text'
 
 const contentPaddingLeft = 12
 
@@ -208,6 +209,12 @@ let componentData = {
             title: 'listview-auto-load-infinite',
             component: PullToRefreshListViewDemo6,
         },
+    },
+    'toast': {
+        'toast': {
+            title: 'toast',
+            component: Toast,
+        }
     },
 
 
