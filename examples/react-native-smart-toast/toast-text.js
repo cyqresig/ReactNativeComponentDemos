@@ -26,7 +26,7 @@ class LoadingToast extends Component {
 
     render() {
         return (
-            <View style={{ marginTop: 64, flex: 1, backgroundColor: '#fff',}}>
+            <View style={{ paddingTop: 64, flex: 1, backgroundColor: '#fff',}}>
                 <Button
                     onPress={this._showTopToast}
                     touchableType={Button.constants.touchableTypes.fadeContent}
