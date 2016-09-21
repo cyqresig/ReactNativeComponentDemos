@@ -84,7 +84,9 @@ class LoadingToast extends Component {
                     show immediate animated hide
                 </Button>
 
-                <Toast ref={ component => this._toast = component }>
+                <Toast
+                    ref={ component => this._toast = component }
+                    marginTop={64}>
                     Unable to connect to app store
                 </Toast>
             </View>
