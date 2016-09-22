@@ -39,6 +39,7 @@ import PullToRefreshListViewDemo4 from '../react-native-smart-pull-to-refresh-li
 import PullToRefreshListViewDemo5 from '../react-native-smart-pull-to-refresh-listview/react-native-smart-pull-to-refresh-listview-demo5'
 import PullToRefreshListViewDemo6 from '../react-native-smart-pull-to-refresh-listview/react-native-smart-pull-to-refresh-listview-demo6'
 import Toast from '../react-native-smart-toast/toast-text'
+import LoadingSpinnerOverLay from '../react-native-smart-loading-spinner-overlay/loading-spinner-overlay'
 
 const contentPaddingLeft = 12
 
@@ -213,6 +214,12 @@ let componentData = {
         'toast': {
             title: 'toast',
             component: Toast,
+        }
+    },
+    'loaing-spinner-overlay (加载信息提示)': {
+        'loaing-spinner-overlay': {
+            title: 'loaing-spinner-overlay (加载信息提示)',
+            component: LoadingSpinnerOverLay,
         }
     },
 
