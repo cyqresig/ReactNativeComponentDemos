@@ -38,6 +38,7 @@ import PullToRefreshListViewDemo3 from '../react-native-smart-pull-to-refresh-li
 import PullToRefreshListViewDemo4 from '../react-native-smart-pull-to-refresh-listview/react-native-smart-pull-to-refresh-listview-demo4'
 import PullToRefreshListViewDemo5 from '../react-native-smart-pull-to-refresh-listview/react-native-smart-pull-to-refresh-listview-demo5'
 import PullToRefreshListViewDemo6 from '../react-native-smart-pull-to-refresh-listview/react-native-smart-pull-to-refresh-listview-demo6'
+import PullToRefreshListViewDemo7 from '../react-native-smart-pull-to-refresh-listview/react-native-smart-pull-to-refresh-listview-demo7'
 import Toast from '../react-native-smart-toast/toast-text'
 import LoadingSpinnerOverLay from '../react-native-smart-loading-spinner-overlay/loading-spinner-overlay'
 
@@ -209,6 +210,10 @@ let componentData = {
             title: 'listview-auto-load-infinite',
             component: PullToRefreshListViewDemo6,
         },
+        'listview-infinite': {
+            title: 'listview-infinite',
+            component: PullToRefreshListViewDemo7,
+        },
     },
     'toast': {
         'toast': {
@@ -216,9 +221,9 @@ let componentData = {
             component: Toast,
         }
     },
-    'loaing-spinner-overlay (加载信息提示)': {
+    'loaing-spinner-overlay': {
         'loaing-spinner-overlay': {
-            title: 'loaing-spinner-overlay (加载信息提示)',
+            title: 'loaing-spinner-overlay',
             component: LoadingSpinnerOverLay,
         }
     },
