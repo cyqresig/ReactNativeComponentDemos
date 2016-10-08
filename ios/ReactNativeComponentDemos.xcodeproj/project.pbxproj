@@ -22,10 +22,10 @@
 		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
-		9F54093E1D87F56100869EE4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F54093C1D87F56100869EE4 /* LaunchScreen.xib */; };
-		9F54093F1D87F56100869EE4 /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F54093D1D87F56100869EE4 /* splash.png */; };
-		9F5409401D87F5BE00869EE4 /* libRCTSplashScreen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC4963E1D87F52000FCF4ED /* libRCTSplashScreen.a */; };
-		9F5409471D87F64500869EE4 /* libRCTTouchId.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F5409461D87F63D00869EE4 /* libRCTTouchId.a */; };
+		9FA9E1701DA8F114002FADAA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FA9E16E1DA8F114002FADAA /* LaunchScreen.xib */; };
+		9FA9E1711DA8F114002FADAA /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FA9E16F1DA8F114002FADAA /* splash.png */; };
+		9FA9E1721DA8F11F002FADAA /* libRCTTouchId.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA9E1631DA8F0FF002FADAA /* libRCTTouchId.a */; };
+		9FA9E1731DA8F123002FADAA /* libRCTSplashScreen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA9E16C1DA8F107002FADAA /* libRCTSplashScreen.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,16 +106,16 @@
 			remoteGlobalIDString = 58B5119B1A9E6C1200147676;
 			remoteInfo = RCTText;
 		};
-		9F5409451D87F63D00869EE4 /* PBXContainerItemProxy */ = {
+		9FA9E1621DA8F0FF002FADAA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 9F5409411D87F63D00869EE4 /* RCTTouchId.xcodeproj */;
+			containerPortal = 9FA9E1571DA8F0FF002FADAA /* RCTTouchId.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 9F03E43D1D40B01B0023205F;
 			remoteInfo = RCTTouchId;
 		};
-		9FC4963D1D87F52000FCF4ED /* PBXContainerItemProxy */ = {
+		9FA9E16B1DA8F107002FADAA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 9FC496331D87F52000FCF4ED /* RCTSplashScreen.xcodeproj */;
+			containerPortal = 9FA9E1671DA8F107002FADAA /* RCTSplashScreen.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 9F90C2241D619E9400F3E238;
 			remoteInfo = RCTSplashScreen;
@@ -143,10 +143,10 @@
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
-		9F54093C1D87F56100869EE4 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
-		9F54093D1D87F56100869EE4 /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
-		9F5409411D87F63D00869EE4 /* RCTTouchId.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTTouchId.xcodeproj; path = "../node_modules/react-native-smart-touch-id/ios/RCTTouchId/RCTTouchId.xcodeproj"; sourceTree = "<group>"; };
-		9FC496331D87F52000FCF4ED /* RCTSplashScreen.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSplashScreen.xcodeproj; path = "../node_modules/react-native-smart-splash-screen/ios/RCTSplashScreen/RCTSplashScreen.xcodeproj"; sourceTree = "<group>"; };
+		9FA9E1571DA8F0FF002FADAA /* RCTTouchId.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTTouchId.xcodeproj; path = "../node_modules/react-native-smart-touch-id/ios/RCTTouchId/RCTTouchId.xcodeproj"; sourceTree = "<group>"; };
+		9FA9E1671DA8F107002FADAA /* RCTSplashScreen.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSplashScreen.xcodeproj; path = "../node_modules/react-native-smart-splash-screen/ios/RCTSplashScreen/RCTSplashScreen.xcodeproj"; sourceTree = "<group>"; };
+		9FA9E16E1DA8F114002FADAA /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		9FA9E16F1DA8F114002FADAA /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,8 +162,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F5409471D87F64500869EE4 /* libRCTTouchId.a in Frameworks */,
-				9F5409401D87F5BE00869EE4 /* libRCTSplashScreen.a in Frameworks */,
+				9FA9E1731DA8F123002FADAA /* libRCTSplashScreen.a in Frameworks */,
+				9FA9E1721DA8F11F002FADAA /* libRCTTouchId.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
 				00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */,
 				00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */,
@@ -285,8 +285,8 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				9F5409411D87F63D00869EE4 /* RCTTouchId.xcodeproj */,
-				9FC496331D87F52000FCF4ED /* RCTSplashScreen.xcodeproj */,
+				9FA9E1671DA8F107002FADAA /* RCTSplashScreen.xcodeproj */,
+				9FA9E1571DA8F0FF002FADAA /* RCTTouchId.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
 				00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */,
 				00C302B51ABCB90400DB3ED1 /* RCTGeolocation.xcodeproj */,
@@ -312,7 +312,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				9F54093B1D87F56100869EE4 /* SplashScreenResource */,
+				9FA9E16D1DA8F114002FADAA /* SplashScreenResource */,
 				13B07FAE1A68108700A75B9A /* ReactNativeComponentDemos */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* ReactNativeComponentDemosTests */,
@@ -331,30 +331,30 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9F54093B1D87F56100869EE4 /* SplashScreenResource */ = {
+		9FA9E1581DA8F0FF002FADAA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9F54093C1D87F56100869EE4 /* LaunchScreen.xib */,
-				9F54093D1D87F56100869EE4 /* splash.png */,
+				9FA9E1631DA8F0FF002FADAA /* libRCTTouchId.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9FA9E1681DA8F107002FADAA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9FA9E16C1DA8F107002FADAA /* libRCTSplashScreen.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9FA9E16D1DA8F114002FADAA /* SplashScreenResource */ = {
+			isa = PBXGroup;
+			children = (
+				9FA9E16E1DA8F114002FADAA /* LaunchScreen.xib */,
+				9FA9E16F1DA8F114002FADAA /* splash.png */,
 			);
 			name = SplashScreenResource;
 			path = "../node_modules/react-native-smart-splash-screen/ios/SplashScreenResource";
-			sourceTree = "<group>";
-		};
-		9F5409421D87F63D00869EE4 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				9F5409461D87F63D00869EE4 /* libRCTTouchId.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		9FC496341D87F52000FCF4ED /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				9FC4963E1D87F52000FCF4ED /* libRCTSplashScreen.a */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -407,7 +407,11 @@
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = L75P3RZGQ2;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = L75P3RZGQ2;
 					};
 				};
 			};
@@ -448,16 +452,16 @@
 					ProjectRef = 139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */;
 				},
 				{
-					ProductGroup = 9FC496341D87F52000FCF4ED /* Products */;
-					ProjectRef = 9FC496331D87F52000FCF4ED /* RCTSplashScreen.xcodeproj */;
+					ProductGroup = 9FA9E1681DA8F107002FADAA /* Products */;
+					ProjectRef = 9FA9E1671DA8F107002FADAA /* RCTSplashScreen.xcodeproj */;
 				},
 				{
 					ProductGroup = 832341B11AAA6A8300B99B32 /* Products */;
 					ProjectRef = 832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */;
 				},
 				{
-					ProductGroup = 9F5409421D87F63D00869EE4 /* Products */;
-					ProjectRef = 9F5409411D87F63D00869EE4 /* RCTTouchId.xcodeproj */;
+					ProductGroup = 9FA9E1581DA8F0FF002FADAA /* Products */;
+					ProjectRef = 9FA9E1571DA8F0FF002FADAA /* RCTTouchId.xcodeproj */;
 				},
 				{
 					ProductGroup = 00C302E01ABCB9EE00DB3ED1 /* Products */;
@@ -551,18 +555,18 @@
 			remoteRef = 832341B41AAA6A8300B99B32 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		9F5409461D87F63D00869EE4 /* libRCTTouchId.a */ = {
+		9FA9E1631DA8F0FF002FADAA /* libRCTTouchId.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libRCTTouchId.a;
-			remoteRef = 9F5409451D87F63D00869EE4 /* PBXContainerItemProxy */;
+			remoteRef = 9FA9E1621DA8F0FF002FADAA /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		9FC4963E1D87F52000FCF4ED /* libRCTSplashScreen.a */ = {
+		9FA9E16C1DA8F107002FADAA /* libRCTSplashScreen.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libRCTSplashScreen.a;
-			remoteRef = 9FC4963D1D87F52000FCF4ED /* PBXContainerItemProxy */;
+			remoteRef = 9FA9E16B1DA8F107002FADAA /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -579,8 +583,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F54093E1D87F56100869EE4 /* LaunchScreen.xib in Resources */,
-				9F54093F1D87F56100869EE4 /* splash.png in Resources */,
+				9FA9E1701DA8F114002FADAA /* LaunchScreen.xib in Resources */,
+				9FA9E1711DA8F114002FADAA /* splash.png in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -637,12 +641,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = L75P3RZGQ2;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = ReactNativeComponentDemosTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactNativeComponentDemos.app/ReactNativeComponentDemos";
@@ -654,8 +659,9 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = L75P3RZGQ2;
 				INFOPLIST_FILE = ReactNativeComponentDemosTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactNativeComponentDemos.app/ReactNativeComponentDemos";
@@ -666,12 +672,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = L75P3RZGQ2;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../node_modules/react-native/React/**",
-					"$(SRCROOT)/../node_modules/react-native-smart-splash-screen/ios/RCTSplashScreen/RCTSplashScreen",
+					"$(SRCROOT)/../node_modules/react-native-smart-splash-screen/ios/RCTSplashScreen/RCTSplashScreen/**",
 				);
 				INFOPLIST_FILE = ReactNativeComponentDemos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -681,6 +689,7 @@
 					"-lc++",
 				);
 				PRODUCT_NAME = ReactNativeComponentDemos;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -688,11 +697,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L75P3RZGQ2;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../node_modules/react-native/React/**",
-					"$(SRCROOT)/../node_modules/react-native-smart-splash-screen/ios/RCTSplashScreen/RCTSplashScreen",
+					"$(SRCROOT)/../node_modules/react-native-smart-splash-screen/ios/RCTSplashScreen/RCTSplashScreen/**",
 				);
 				INFOPLIST_FILE = ReactNativeComponentDemos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -702,6 +713,7 @@
 					"-lc++",
 				);
 				PRODUCT_NAME = ReactNativeComponentDemos;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
@@ -744,7 +756,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../node_modules/react-native/React/**",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -784,7 +796,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../node_modules/react-native/React/**",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

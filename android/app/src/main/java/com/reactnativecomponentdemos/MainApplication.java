@@ -14,7 +14,7 @@ import java.util.List;
 
 public class MainApplication extends Application implements ReactApplication {
 
-//  private final ReactNativeHost mReactNativeHost = new ReactNativeHost(this) {
+  //  private final ReactNativeHost mReactNativeHost = new ReactNativeHost(this) {
   private ReactNativeHost mReactNativeHost = new ReactNativeHost(this) {
     @Override
     protected boolean getUseDeveloperSupport() {
@@ -24,7 +24,7 @@ public class MainApplication extends Application implements ReactApplication {
     @Override
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
-          new MainReactPackage()
+              new MainReactPackage()
       );
     }
   };
@@ -35,6 +35,6 @@ public class MainApplication extends Application implements ReactApplication {
 
   @Override
   public ReactNativeHost getReactNativeHost() {
-      return mReactNativeHost;
+    return mReactNativeHost;
   }
 }
