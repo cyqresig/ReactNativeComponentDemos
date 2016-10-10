@@ -34,6 +34,8 @@ Demos for react-native components of [react-native-component][1]
 * [react-native-smart-button][10]
 * [react-native-smart-sudoku-grid][11]
 * [react-native-smart-corner-label][12]
+* [react-native-smart-toast][13]
+* [react-native-smart-loading-spinner-overlay][14]
 
 [1]: https://github.com/react-native-component
 [2]: https://github.com/react-native-component/react-native-smart-splash-screen
@@ -47,6 +49,8 @@ Demos for react-native components of [react-native-component][1]
 [10]: https://github.com/react-native-component/react-native-smart-button
 [11]: https://github.com/react-native-component/react-native-smart-sudoku-grid
 [12]: https://github.com/react-native-component/react-native-smart-corner-label
+[13]: https://github.com/react-native-component/react-native-smart-toast
+[14]: https://github.com/react-native-component/react-native-smart-loading-spinner-overlay
 
 [100]: http://cyqresig.github.io/img/react-native-component-demos-preview-ios-v0.0.1.gif
 [101]: http://cyqresig.github.io/img/react-native-component-demos-preview-android-v0.0.1.gif
