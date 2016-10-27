@@ -41,6 +41,7 @@ import PullToRefreshListViewDemo6 from '../react-native-smart-pull-to-refresh-li
 import PullToRefreshListViewDemo7 from '../react-native-smart-pull-to-refresh-listview/react-native-smart-pull-to-refresh-listview-demo7'
 import Toast from '../react-native-smart-toast/toast-text'
 import LoadingSpinnerOverLay from '../react-native-smart-loading-spinner-overlay/loading-spinner-overlay'
+import Barcode from '../react-native-smart-barcode/fullscreen'
 
 const contentPaddingLeft = 12
 
@@ -225,6 +226,12 @@ let componentData = {
         'loaing-spinner-overlay': {
             title: 'loaing-spinner-overlay',
             component: LoadingSpinnerOverLay,
+        }
+    },
+    'barcode (扫码)': {
+        'fullscreen': {
+            title: 'fullscreen (全屏扫描)',
+            component: Barcode,
         }
     },
 

@@ -24,6 +24,7 @@
     "react": "15.3.2",
     "react-native": "^0.34.1",
     "react-native-smart-badge": "^1.1.1",
+    "react-native-smart-barcode": "^1.0.0",
     "react-native-smart-button": "^1.5.0",
     "react-native-smart-corner-label": "^1.1.1",
     "react-native-smart-gesture-password": "^2.0.3",
@@ -36,5 +37,15 @@
     "react-native-smart-timer-enhance": "^1.0.2",
     "react-native-smart-toast": "^1.1.1",
     "react-native-smart-touch-id": "^1.0.4"
+  },
+  "jest": {
+    "preset": "jest-react-native"
+  },
+  "devDependencies": {
+    "babel-jest": "16.0.0",
+    "babel-preset-react-native": "1.9.0",
+    "jest": "16.0.2",
+    "jest-react-native": "16.0.0",
+    "react-test-renderer": "15.3.2"
   }
 }

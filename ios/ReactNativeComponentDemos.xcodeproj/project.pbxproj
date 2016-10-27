@@ -22,6 +22,8 @@
 		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		9F0CCB881DC20CBA00CA54D1 /* beep.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9F0CCB871DC20CBA00CA54D1 /* beep.wav */; };
+		9F0CCB9B1DC20CD500CA54D1 /* libRCTBarcode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F0CCB9A1DC20CC800CA54D1 /* libRCTBarcode.a */; };
 		9FA9E1701DA8F114002FADAA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FA9E16E1DA8F114002FADAA /* LaunchScreen.xib */; };
 		9FA9E1711DA8F114002FADAA /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FA9E16F1DA8F114002FADAA /* splash.png */; };
 		9FA9E1721DA8F11F002FADAA /* libRCTTouchId.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA9E1631DA8F0FF002FADAA /* libRCTTouchId.a */; };
@@ -106,6 +108,13 @@
 			remoteGlobalIDString = 58B5119B1A9E6C1200147676;
 			remoteInfo = RCTText;
 		};
+		9F0CCB991DC20CC800CA54D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F0CCB951DC20CC800CA54D1 /* RCTBarCode.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9FCCD7581DAC8DA800025BFD;
+			remoteInfo = RCTBarcode;
+		};
 		9FA9E1621DA8F0FF002FADAA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9FA9E1571DA8F0FF002FADAA /* RCTTouchId.xcodeproj */;
@@ -143,6 +152,8 @@
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		9F0CCB871DC20CBA00CA54D1 /* beep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = beep.wav; sourceTree = "<group>"; };
+		9F0CCB951DC20CC800CA54D1 /* RCTBarCode.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBarCode.xcodeproj; path = "../node_modules/react-native-smart-barcode/ios/RCTBarcode/RCTBarCode.xcodeproj"; sourceTree = "<group>"; };
 		9FA9E1571DA8F0FF002FADAA /* RCTTouchId.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTTouchId.xcodeproj; path = "../node_modules/react-native-smart-touch-id/ios/RCTTouchId/RCTTouchId.xcodeproj"; sourceTree = "<group>"; };
 		9FA9E1671DA8F107002FADAA /* RCTSplashScreen.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSplashScreen.xcodeproj; path = "../node_modules/react-native-smart-splash-screen/ios/RCTSplashScreen/RCTSplashScreen.xcodeproj"; sourceTree = "<group>"; };
 		9FA9E16E1DA8F114002FADAA /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
@@ -162,6 +173,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F0CCB9B1DC20CD500CA54D1 /* libRCTBarcode.a in Frameworks */,
 				9FA9E1731DA8F123002FADAA /* libRCTSplashScreen.a in Frameworks */,
 				9FA9E1721DA8F11F002FADAA /* libRCTTouchId.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
@@ -285,6 +297,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				9F0CCB951DC20CC800CA54D1 /* RCTBarCode.xcodeproj */,
 				9FA9E1671DA8F107002FADAA /* RCTSplashScreen.xcodeproj */,
 				9FA9E1571DA8F0FF002FADAA /* RCTTouchId.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
@@ -312,6 +325,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				9F0CCB861DC20CBA00CA54D1 /* raw */,
 				9FA9E16D1DA8F114002FADAA /* SplashScreenResource */,
 				13B07FAE1A68108700A75B9A /* ReactNativeComponentDemos */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
@@ -327,6 +341,23 @@
 			children = (
 				13B07F961A680F5B00A75B9A /* ReactNativeComponentDemos.app */,
 				00E356EE1AD99517003FC87E /* ReactNativeComponentDemosTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F0CCB861DC20CBA00CA54D1 /* raw */ = {
+			isa = PBXGroup;
+			children = (
+				9F0CCB871DC20CBA00CA54D1 /* beep.wav */,
+			);
+			name = raw;
+			path = "../node_modules/react-native-smart-barcode/ios/raw";
+			sourceTree = "<group>";
+		};
+		9F0CCB961DC20CC800CA54D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F0CCB9A1DC20CC800CA54D1 /* libRCTBarcode.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -430,6 +461,10 @@
 				{
 					ProductGroup = 00C302A81ABCB8CE00DB3ED1 /* Products */;
 					ProjectRef = 00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */;
+				},
+				{
+					ProductGroup = 9F0CCB961DC20CC800CA54D1 /* Products */;
+					ProjectRef = 9F0CCB951DC20CC800CA54D1 /* RCTBarCode.xcodeproj */;
 				},
 				{
 					ProductGroup = 00C302B61ABCB90400DB3ED1 /* Products */;
@@ -555,6 +590,13 @@
 			remoteRef = 832341B41AAA6A8300B99B32 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		9F0CCB9A1DC20CC800CA54D1 /* libRCTBarcode.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTBarcode.a;
+			remoteRef = 9F0CCB991DC20CC800CA54D1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		9FA9E1631DA8F0FF002FADAA /* libRCTTouchId.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -583,6 +625,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F0CCB881DC20CBA00CA54D1 /* beep.wav in Resources */,
 				9FA9E1701DA8F114002FADAA /* LaunchScreen.xib in Resources */,
 				9FA9E1711DA8F114002FADAA /* splash.png in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,

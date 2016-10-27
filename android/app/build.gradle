@@ -143,6 +143,7 @@ dependencies {
     compile "com.facebook.react:react-native:+"  // From node_modules
     compile project(':react-native-smart-splashscreen')
     compile project(':react-native-smart-swipe-refresh-layout')
+    compile project(':react-native-smart-barcode')
 }
 
 // Run this once to be able to run the application with BUCK

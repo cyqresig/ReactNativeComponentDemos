@@ -2,7 +2,16 @@ package com.reactnativecomponentdemos;
 
 import android.os.Bundle;
 import com.facebook.react.ReactActivity;
+import com.facebook.react.ReactNativeHost;
+import com.facebook.react.ReactPackage;
+import com.facebook.react.shell.MainReactPackage;
+import com.reactnativecomponent.barcode.RCTCapturePackage;
 import com.reactnativecomponent.splashscreen.RCTSplashScreen;
+import com.reactnativecomponent.splashscreen.RCTSplashScreenPackage;
+import com.reactnativecomponent.swiperefreshlayout.RCTSwipeRefreshLayoutPackage;
+
+import java.util.Arrays;
+import java.util.List;
 
 public class MainActivity extends ReactActivity {
 
@@ -18,6 +27,26 @@ public class MainActivity extends ReactActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         RCTSplashScreen.openSplashScreen(this);
+
+        MainApplication application = (MainApplication) this.getApplication();
+        application.setReactNativeHost(new ReactNativeHost(application) {
+            @Override
+            protected boolean getUseDeveloperSupport() {
+                return BuildConfig.DEBUG;
+            }
+
+            @Override
+            protected List<ReactPackage> getPackages() {
+                return Arrays.<ReactPackage>asList(
+                        new MainReactPackage(),
+                        new RCTSplashScreenPackage(),               //register Module
+                        new RCTSwipeRefreshLayoutPackage(),         //register Module
+                        new RCTCapturePackage(MainActivity.this)    //register Module
+                );
+            }
+
+        });
+
         super.onCreate(savedInstanceState);
     }
 }
