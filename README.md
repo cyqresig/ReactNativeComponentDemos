@@ -3,25 +3,27 @@ Demos for react-native components of [react-native-component][1]
 
 ## Preview
 
-![ReactNativeComponentDemos Ios Preview][100]
-![ReactNativeComponentDemos Android Preview][101]
+![ReactNativeComponentDemos IOS Preview][10000]
+![ReactNativeComponentDemos Android Preview][10001]
 
 ## Installation
 
 *   `git clone https://github.com/cyqresig/ReactNativeComponentDemos.git`
 *   `cd ReactNativeComponentDemos && npm install`
 
-## Installation(Ios)
+## Installation(IOS)
 
 * [react-native-smart-splash-screen][2]
 * [react-native-smart-touch-id][3]
 * [react-native-smart-barcode][15]
+* [react-native-smart-image-loader][16]
 
 ## Installation(Android)
 
 * [react-native-smart-splash-screen][2]
 * [react-native-smart-pull-to-refresh-listview][4]
 * [react-native-smart-barcode][15]
+* [react-native-smart-image-loader][16]
 
 ## Usage
 
@@ -39,6 +41,7 @@ Demos for react-native components of [react-native-component][1]
 * [react-native-smart-toast][13]
 * [react-native-smart-loading-spinner-overlay][14]
 * [react-native-smart-barcode][15]
+* [react-native-smart-image-loader][16]
 
 [1]: https://github.com/react-native-component
 [2]: https://github.com/react-native-component/react-native-smart-splash-screen
@@ -55,6 +58,7 @@ Demos for react-native components of [react-native-component][1]
 [13]: https://github.com/react-native-component/react-native-smart-toast
 [14]: https://github.com/react-native-component/react-native-smart-loading-spinner-overlay
 [15]: https://github.com/react-native-component/react-native-smart-barcode
+[16]: https://github.com/react-native-component/react-native-smart-image-loader
 
-[100]: http://cyqresig.github.io/img/react-native-component-demos-preview-ios-v0.0.1.gif
-[101]: http://cyqresig.github.io/img/react-native-component-demos-preview-android-v0.0.1.gif
+[10000]: http://cyqresig.github.io/img/react-native-component-demos-preview-ios-v0.0.1.gif
+[10001]: http://cyqresig.github.io/img/react-native-component-demos-preview-android-v0.0.1.gif

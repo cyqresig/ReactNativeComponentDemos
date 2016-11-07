@@ -1,9 +1,11 @@
 {
   "name": "ReactNativeComponentDemos",
   "version": "0.0.1",
+  "private": true,
   "description": "Demos for react-native components of 'react-native-component'.",
   "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start"
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -22,7 +24,7 @@
   "homepage": "https://github.com/cyqresig/ReactNativeComponentDemos#readme",
   "dependencies": {
     "react": "15.3.2",
-    "react-native": "^0.34.1",
+    "react-native": "^0.36.1",
     "react-native-smart-badge": "^1.1.1",
     "react-native-smart-barcode": "^1.0.0",
     "react-native-smart-button": "^1.5.0",
@@ -30,7 +32,8 @@
     "react-native-smart-gesture-password": "^2.0.3",
     "react-native-smart-loading-spinner-overlay": "^1.0.1",
     "react-native-smart-parabola": "^1.0.2",
-    "react-native-smart-pull-to-refresh-listview": "^1.1.0",
+    "react-native-smart-pull-to-refresh-listview": "^1.2.3",
+    "react-native-smart-image-loader": "^1.0.0",
     "react-native-smart-security-text": "^1.0.1",
     "react-native-smart-splash-screen": "^2.0.0",
     "react-native-smart-sudoku-grid": "^1.0.9",

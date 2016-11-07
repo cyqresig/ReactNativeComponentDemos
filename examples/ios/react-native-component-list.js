@@ -39,6 +39,7 @@ import PullToRefreshListViewDemo4 from '../react-native-smart-pull-to-refresh-li
 import PullToRefreshListViewDemo5 from '../react-native-smart-pull-to-refresh-listview/react-native-smart-pull-to-refresh-listview-demo5'
 import PullToRefreshListViewDemo6 from '../react-native-smart-pull-to-refresh-listview/react-native-smart-pull-to-refresh-listview-demo6'
 import PullToRefreshListViewDemo7 from '../react-native-smart-pull-to-refresh-listview/react-native-smart-pull-to-refresh-listview-demo7'
+import ListImageLoaderDemo from '../react-native-smart-image-loader/react-native-smart-pull-to-refresh-listview+image-loader'
 import Toast from '../react-native-smart-toast/toast-text'
 import LoadingSpinnerOverLay from '../react-native-smart-loading-spinner-overlay/loading-spinner-overlay'
 import Barcode from '../react-native-smart-barcode/fullscreen'
@@ -228,11 +229,17 @@ let componentData = {
             component: LoadingSpinnerOverLay,
         }
     },
-    'barcode (扫码)': {
+    'barcode': {
         'fullscreen': {
-            title: 'fullscreen (全屏扫描)',
+            title: 'fullscreen',
             component: Barcode,
         }
+    },
+    'image-loader': {
+        'listview-imageloader': {
+            title: 'listview-imageloader',
+            component: ListImageLoaderDemo,
+        },
     },
 
 
