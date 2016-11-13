@@ -41,7 +41,7 @@
     "react-native-smart-toast": "^1.1.1",
     "react-native-smart-touch-id": "^1.0.4",
     "react-native-smart-app-event-listener-enhance": "^1.1.1",
-    "react-native-smart-amap-location": "^1.0.4"
+    "react-native-smart-amap-location": "^1.0.5"
   },
   "jest": {
     "preset": "jest-react-native"
