@@ -44,6 +44,7 @@ import Toast from '../react-native-smart-toast/toast-text'
 import LoadingSpinnerOverLay from '../react-native-smart-loading-spinner-overlay/loading-spinner-overlay'
 import Barcode from '../react-native-smart-barcode/fullscreen'
 import AppEventListenerEnhanceDemo from '../react-native-smart-app-event-listener-enhance/app-event-listener-enhance'
+import AMapLocationAlone from '../react-native-smart-amap-location/amap-location-alone-ios'
 
 const contentPaddingLeft = 12
 
@@ -247,6 +248,12 @@ let componentData = {
         'app-event-listener-enhance': {
             title: 'app-event-listener-enhance',
             component: AppEventListenerEnhanceDemo,
+        },
+    },
+    'amap-location (高德定位)': {
+        'amap-location-alone': {
+            title: '单次定位(不依赖地图)',
+            component: AMapLocationAlone,
         },
     },
 

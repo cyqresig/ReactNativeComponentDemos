@@ -13,11 +13,14 @@
 #import "RCTRootView.h"
 
 #import "RCTSplashScreen.h" //import interface
+#import <AMapFoundationKit/AMapFoundationKit.h> //引入高德地图核心包
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+  [AMapServices sharedServices].apiKey = @"5cb14afaafbd3c3a6fb52ad3582169bb"; //设置高德地图SDK服务key
+  
   NSURL *jsCodeLocation;
 
   jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil];

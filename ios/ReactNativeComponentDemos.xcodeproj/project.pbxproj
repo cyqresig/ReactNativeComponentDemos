@@ -29,6 +29,16 @@
 		9F1127021DD065790018019A /* libRCTBarcode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F1127011DD065760018019A /* libRCTBarcode.a */; };
 		9F1127091DD0658C0018019A /* libRCTImageLoader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F1127081DD065870018019A /* libRCTImageLoader.a */; };
 		9F11270C1DD065AF0018019A /* goods-placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F11270B1DD065AF0018019A /* goods-placeholder.png */; };
+		9F1200111DD86888001E20E0 /* AMapFoundationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F12000F1DD86888001E20E0 /* AMapFoundationKit.framework */; };
+		9F1200121DD86888001E20E0 /* AMapLocationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F1200101DD86888001E20E0 /* AMapLocationKit.framework */; };
+		9F12FFB91DD8627E001E20E0 /* libRCTAMapLocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F12FFA41DD86256001E20E0 /* libRCTAMapLocation.a */; };
+		9F12FFC01DD8630E001E20E0 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F12FFBF1DD8630E001E20E0 /* libstdc++.6.0.9.tbd */; };
+		9F12FFC21DD8631D001E20E0 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F12FFC11DD8631D001E20E0 /* libc++.tbd */; };
+		9F12FFC41DD86326001E20E0 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F12FFC31DD86326001E20E0 /* libz.tbd */; };
+		9F12FFC61DD86330001E20E0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F12FFC51DD86330001E20E0 /* Security.framework */; };
+		9F12FFC81DD86338001E20E0 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F12FFC71DD86338001E20E0 /* CoreTelephony.framework */; };
+		9F12FFCA1DD86342001E20E0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F12FFC91DD86342001E20E0 /* SystemConfiguration.framework */; };
+		9F12FFCC1DD8634C001E20E0 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F12FFCB1DD8634C001E20E0 /* JavaScriptCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -186,6 +196,13 @@
 			remoteGlobalIDString = 9FCAB9741DC47EAB00C55277;
 			remoteInfo = RCTImageLoader;
 		};
+		9F12FFA31DD86256001E20E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F12FF9E1DD86256001E20E0 /* RCTAMapLocation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9F042C311DD56193001BA3C4;
+			remoteInfo = RCTAMapLocation;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -216,6 +233,16 @@
 		9F1126FC1DD065760018019A /* RCTBarCode.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBarCode.xcodeproj; path = "../node_modules/react-native-smart-barcode/ios/RCTBarcode/RCTBarCode.xcodeproj"; sourceTree = "<group>"; };
 		9F1127031DD065870018019A /* RCTImageLoader.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTImageLoader.xcodeproj; path = "../node_modules/react-native-smart-image-loader/ios/RCTImageLoader/RCTImageLoader.xcodeproj"; sourceTree = "<group>"; };
 		9F11270B1DD065AF0018019A /* goods-placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "goods-placeholder.png"; sourceTree = "<group>"; };
+		9F12000F1DD86888001E20E0 /* AMapFoundationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMapFoundationKit.framework; sourceTree = "<group>"; };
+		9F1200101DD86888001E20E0 /* AMapLocationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMapLocationKit.framework; sourceTree = "<group>"; };
+		9F12FF9E1DD86256001E20E0 /* RCTAMapLocation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAMapLocation.xcodeproj; path = "../node_modules/react-native-smart-amap-location/ios/RCTAMapLocation/RCTAMapLocation.xcodeproj"; sourceTree = "<group>"; };
+		9F12FFBF1DD8630E001E20E0 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		9F12FFC11DD8631D001E20E0 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		9F12FFC31DD86326001E20E0 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		9F12FFC51DD86330001E20E0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		9F12FFC71DD86338001E20E0 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		9F12FFC91DD86342001E20E0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		9F12FFCB1DD8634C001E20E0 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +258,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F12FFCC1DD8634C001E20E0 /* JavaScriptCore.framework in Frameworks */,
+				9F1200111DD86888001E20E0 /* AMapFoundationKit.framework in Frameworks */,
+				9F12FFCA1DD86342001E20E0 /* SystemConfiguration.framework in Frameworks */,
+				9F12FFC81DD86338001E20E0 /* CoreTelephony.framework in Frameworks */,
+				9F12FFC61DD86330001E20E0 /* Security.framework in Frameworks */,
+				9F12FFC41DD86326001E20E0 /* libz.tbd in Frameworks */,
+				9F12FFC21DD8631D001E20E0 /* libc++.tbd in Frameworks */,
+				9F12FFC01DD8630E001E20E0 /* libstdc++.6.0.9.tbd in Frameworks */,
+				9F12FFB91DD8627E001E20E0 /* libRCTAMapLocation.a in Frameworks */,
 				9F1127091DD0658C0018019A /* libRCTImageLoader.a in Frameworks */,
 				9F1127021DD065790018019A /* libRCTBarcode.a in Frameworks */,
 				9F1126FB1DD065430018019A /* libRCTTouchId.a in Frameworks */,
@@ -243,6 +279,7 @@
 				00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */,
 				139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */,
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
+				9F1200121DD86888001E20E0 /* AMapLocationKit.framework in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 			);
@@ -362,6 +399,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				9F12FF9E1DD86256001E20E0 /* RCTAMapLocation.xcodeproj */,
 				9F1127031DD065870018019A /* RCTImageLoader.xcodeproj */,
 				9F1126FC1DD065760018019A /* RCTBarCode.xcodeproj */,
 				9F1126F51DD065360018019A /* RCTTouchId.xcodeproj */,
@@ -392,12 +430,14 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				9F12000E1DD86888001E20E0 /* Frameworks */,
 				9F11270A1DD065AF0018019A /* ImageLoaderResources */,
 				9F1126F01DD0602F0018019A /* SplashScreenResource */,
 				13B07FAE1A68108700A75B9A /* ReactNativeComponentDemos */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* ReactNativeComponentDemosTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
+				9F12FFBA1DD862F2001E20E0 /* Frameworks */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -461,6 +501,37 @@
 			);
 			name = ImageLoaderResources;
 			path = "../node_modules/react-native-smart-image-loader/ios/ImageLoaderResources";
+			sourceTree = "<group>";
+		};
+		9F12000E1DD86888001E20E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F12000F1DD86888001E20E0 /* AMapFoundationKit.framework */,
+				9F1200101DD86888001E20E0 /* AMapLocationKit.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F12FF9F1DD86256001E20E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F12FFA41DD86256001E20E0 /* libRCTAMapLocation.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F12FFBA1DD862F2001E20E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F12FFCB1DD8634C001E20E0 /* JavaScriptCore.framework */,
+				9F12FFC91DD86342001E20E0 /* SystemConfiguration.framework */,
+				9F12FFC71DD86338001E20E0 /* CoreTelephony.framework */,
+				9F12FFC51DD86330001E20E0 /* Security.framework */,
+				9F12FFC31DD86326001E20E0 /* libz.tbd */,
+				9F12FFC11DD8631D001E20E0 /* libc++.tbd */,
+				9F12FFBF1DD8630E001E20E0 /* libstdc++.6.0.9.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -536,6 +607,10 @@
 				{
 					ProductGroup = 00C302A81ABCB8CE00DB3ED1 /* Products */;
 					ProjectRef = 00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */;
+				},
+				{
+					ProductGroup = 9F12FF9F1DD86256001E20E0 /* Products */;
+					ProjectRef = 9F12FF9E1DD86256001E20E0 /* RCTAMapLocation.xcodeproj */;
 				},
 				{
 					ProductGroup = 9F1126FD1DD065760018019A /* Products */;
@@ -746,6 +821,13 @@
 			remoteRef = 9F1127071DD065870018019A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		9F12FFA41DD86256001E20E0 /* libRCTAMapLocation.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTAMapLocation.a;
+			remoteRef = 9F12FFA31DD86256001E20E0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -853,6 +935,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = L75P3RZGQ2;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Frameworks";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -877,6 +960,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L75P3RZGQ2;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Frameworks";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,

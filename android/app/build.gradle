@@ -98,11 +98,29 @@ android {
     }
 
     signingConfigs {
+        /**
+         * 设置你的keystore相关
+         * demo中只是一个示例，使用时请根据实际情况进行配置
+         */
+        debug {
+            //keystore中key的别名
+            keyAlias 'cyq-key-alias'
+            //keystore中key的密码
+            keyPassword '1234567890'
+            //keystore的文件路径，可以是绝对路径也可以是相对路径
+            storeFile file('cyq-release-key.keystore')
+            //keystore的密码
+            storePassword '1234567890'
+        }
        release {
-           storeFile file(CYQ_RELEASE_STORE_FILE)
-           storePassword CYQ_RELEASE_STORE_PASSWORD
-           keyAlias CYQ_RELEASE_KEY_ALIAS
-           keyPassword CYQ_RELEASE_KEY_PASSWORD
+           //keystore中key的别名
+           keyAlias 'cyq-key-alias'
+           //keystore中key的密码
+           keyPassword '1234567890'
+           //keystore的文件路径，可以是绝对路径也可以是相对路径
+           storeFile file('cyq-release-key.keystore')
+           //keystore的密码
+           storePassword '1234567890'
        }
     }
 
@@ -145,6 +163,7 @@ dependencies {
     compile project(':react-native-smart-swipe-refresh-layout')
     compile project(':react-native-smart-barcode')
     compile project(':react-native-smart-image-loader')
+    compile project(':react-native-smart-amap-location')
 }
 
 // Run this once to be able to run the application with BUCK

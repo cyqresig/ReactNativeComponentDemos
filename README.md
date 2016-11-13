@@ -17,6 +17,7 @@ Demos for react-native components of [react-native-component][1]
 * [react-native-smart-touch-id][3]
 * [react-native-smart-barcode][15]
 * [react-native-smart-image-loader][16]
+* [react-native-smart-amap-location][18]
 
 ## Installation(Android)
 
@@ -24,6 +25,7 @@ Demos for react-native components of [react-native-component][1]
 * [react-native-smart-pull-to-refresh-listview][4]
 * [react-native-smart-barcode][15]
 * [react-native-smart-image-loader][16]
+* [react-native-smart-amap-location][18]
 
 ## Usage
 
@@ -42,6 +44,8 @@ Demos for react-native components of [react-native-component][1]
 * [react-native-smart-loading-spinner-overlay][14]
 * [react-native-smart-barcode][15]
 * [react-native-smart-image-loader][16]
+* [react-native-smart-app-event-listener-enhance][17]
+* [react-native-smart-amap-location][18]
 
 [1]: https://github.com/react-native-component
 [2]: https://github.com/react-native-component/react-native-smart-splash-screen
@@ -59,6 +63,8 @@ Demos for react-native components of [react-native-component][1]
 [14]: https://github.com/react-native-component/react-native-smart-loading-spinner-overlay
 [15]: https://github.com/react-native-component/react-native-smart-barcode
 [16]: https://github.com/react-native-component/react-native-smart-image-loader
+[17]: https://github.com/react-native-component/react-native-smart-app-event-listener-enhance
+[18]: https://github.com/react-native-component/react-native-smart-amap-location
 
 [10000]: http://cyqresig.github.io/img/react-native-component-demos-preview-ios-v0.0.1.gif
 [10001]: http://cyqresig.github.io/img/react-native-component-demos-preview-android-v0.0.1.gif
