@@ -35,11 +35,12 @@
     "react-native-smart-pull-to-refresh-listview": "^1.2.3",
     "react-native-smart-image-loader": "^1.0.0",
     "react-native-smart-security-text": "^1.0.1",
-    "react-native-smart-splash-screen": "^2.0.0",
+    "react-native-smart-splash-screen": "^2.1.0",
     "react-native-smart-sudoku-grid": "^1.0.9",
     "react-native-smart-timer-enhance": "^1.0.2",
     "react-native-smart-toast": "^1.1.1",
-    "react-native-smart-touch-id": "^1.0.4"
+    "react-native-smart-touch-id": "^1.0.4",
+    "react-native-smart-app-event-listener-enhance": "^1.1.1"
   },
   "jest": {
     "preset": "jest-react-native"

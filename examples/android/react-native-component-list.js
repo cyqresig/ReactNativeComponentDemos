@@ -43,6 +43,7 @@ import ListImageLoaderDemo from '../react-native-smart-image-loader/react-native
 import Toast from '../react-native-smart-toast/toast-text'
 import LoadingSpinnerOverLay from '../react-native-smart-loading-spinner-overlay/loading-spinner-overlay'
 import Barcode from '../react-native-smart-barcode/fullscreen'
+import AppEventListenerEnhanceDemo from '../react-native-smart-app-event-listener-enhance/app-event-listener-enhance'
 
 const contentPaddingLeft = 12
 
@@ -232,7 +233,7 @@ let componentData = {
     },
     'barcode (扫码)': {
         'fullscreen': {
-            title: 'fullscreen (全屏扫描)',
+            title: 'fullscreen',
             component: Barcode,
         }
     },
@@ -240,6 +241,12 @@ let componentData = {
         'listview-imageloader': {
             title: 'listview-imageloader',
             component: ListImageLoaderDemo,
+        },
+    },
+    'app-event-listener-enhance': {
+        'app-event-listener-enhance': {
+            title: 'app-event-listener-enhance',
+            component: AppEventListenerEnhanceDemo,
         },
     },
 

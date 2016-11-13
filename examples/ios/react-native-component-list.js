@@ -43,6 +43,8 @@ import ListImageLoaderDemo from '../react-native-smart-image-loader/react-native
 import Toast from '../react-native-smart-toast/toast-text'
 import LoadingSpinnerOverLay from '../react-native-smart-loading-spinner-overlay/loading-spinner-overlay'
 import Barcode from '../react-native-smart-barcode/fullscreen'
+import AppEventListenerEnhanceDemo from '../react-native-smart-app-event-listener-enhance/app-event-listener-enhance'
+
 
 const contentPaddingLeft = 12
 
@@ -241,7 +243,12 @@ let componentData = {
             component: ListImageLoaderDemo,
         },
     },
-
+    'app-event-listener-enhance': {
+        'app-event-listener-enhance': {
+            title: 'app-event-listener-enhance',
+            component: AppEventListenerEnhanceDemo,
+        },
+    },
 
 }
 let dataSource = new ListView.DataSource({
