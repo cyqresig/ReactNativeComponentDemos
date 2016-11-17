@@ -40,6 +40,7 @@ import PullToRefreshListViewDemo5 from '../react-native-smart-pull-to-refresh-li
 import PullToRefreshListViewDemo6 from '../react-native-smart-pull-to-refresh-listview/react-native-smart-pull-to-refresh-listview-demo6'
 import PullToRefreshListViewDemo7 from '../react-native-smart-pull-to-refresh-listview/react-native-smart-pull-to-refresh-listview-demo7'
 import ListImageLoaderDemo from '../react-native-smart-image-loader/react-native-smart-pull-to-refresh-listview+image-loader'
+import ListImageLoaderAndroidDemo from '../react-native-smart-image-loader/react-native-smart-pull-to-refresh-listview+image-loader(android)'
 import Toast from '../react-native-smart-toast/toast-text'
 import LoadingSpinnerOverLay from '../react-native-smart-loading-spinner-overlay/loading-spinner-overlay'
 import Barcode from '../react-native-smart-barcode/fullscreen'
@@ -242,6 +243,10 @@ let componentData = {
         'listview-imageloader': {
             title: 'listview-imageloader',
             component: ListImageLoaderDemo,
+        },
+        'listview-imageloader-android': {
+            title: 'listview-imageloader-android',
+            component: ListImageLoaderAndroidDemo,
         },
     },
     'app-event-listener-enhance': {
