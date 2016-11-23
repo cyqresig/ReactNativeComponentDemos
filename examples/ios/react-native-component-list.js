@@ -16,6 +16,7 @@ import {
     StatusBar,
     TouchableHighlight,
     TouchableOpacity,
+    NativeAppEventEmitter,
 } from 'react-native'
 
 import AllButton from '../react-native-smart-button/all-buttons'
@@ -45,6 +46,11 @@ import LoadingSpinnerOverLay from '../react-native-smart-loading-spinner-overlay
 import Barcode from '../react-native-smart-barcode/fullscreen'
 import AppEventListenerEnhanceDemo from '../react-native-smart-app-event-listener-enhance/app-event-listener-enhance'
 import AMapLocationAlone from '../react-native-smart-amap-location/amap-location-alone-ios'
+import AMapAlone from '../react-native-smart-amap/amap-alone'
+
+import AppEventListenerEnhance from 'react-native-smart-app-event-listener-enhance'
+import TimerEnhance from 'react-native-smart-timer-enhance'
+import AMapLocation from 'react-native-smart-amap-location'
 
 const contentPaddingLeft = 12
 
@@ -255,6 +261,12 @@ let componentData = {
             component: AMapLocationAlone,
         },
     },
+    'amap (高德地图)': {
+        'amap-alone': {
+            title: '地图-单次定位',
+            component: AMapAlone,
+        },
+    },
 
 }
 let dataSource = new ListView.DataSource({
@@ -266,7 +278,7 @@ let dataSource = new ListView.DataSource({
     },
 })
 
-export default class ReactNativeComponentList extends Component {
+class ReactNativeComponentList extends Component {
 
     // 构造
     constructor (props, context) {
@@ -275,6 +287,10 @@ export default class ReactNativeComponentList extends Component {
         this.state = {
             componentDataSource: dataSource.cloneWithRowsAndSections(componentData)
         };
+        this._coordinate = {
+            latitude: 0,
+            longitude: 0,
+        }
     }
 
     render () {
@@ -298,6 +314,55 @@ export default class ReactNativeComponentList extends Component {
                 />
             </View>
         );
+    }
+
+    componentDidMount() {
+        let currentRoute = this.props.navigator.navigationContext._currentRoute
+        let viewAppearCallBack = (event) => {
+            //didfocus emit in componentDidMount
+            if (currentRoute === event.data.route) {
+                console.log("self didAppear")
+            } else {
+                console.log("self didDisappear, other didAppear")
+            }
+            //console.log(currentRoute)
+            //console.log(event.data.route)
+            this.setTimeout( () => {
+                AMapLocation.init(null)
+                AMapLocation.getLocation()
+                didFocusListener.remove()
+            }, 500)
+        }
+
+        let didFocusListener = this.props.navigator.navigationContext.addListener('didfocus', viewAppearCallBack)
+        this.addAppEventListener(
+            //this.props.navigator.navigationContext.addListener('willfocus', viewAppearCallBack),
+            didFocusListener,
+            NativeAppEventEmitter.addListener('amap.location.onLocationResult', this._onLocationResult)
+        )
+    }
+
+    componentWillUnmount () {
+        //停止并销毁定位服务
+        AMapLocation.cleanUp()
+    }
+
+    _onLocationResult = (result) => {
+        if(result.error) {
+            console.log(`错误代码: ${result.error.code}, 错误信息: ${result.error.localizedDescription}`)
+        }
+        else {
+            if(result.formattedAddress) {
+                console.log(`格式化地址 = ${result.formattedAddress}`)
+            }
+            else {
+                console.log(`纬度 = ${result.coordinate.latitude}, 经度 = ${result.coordinate.longitude}`)
+                this._coordinate = {
+                    latitude: result.coordinate.latitude,
+                    longitude: result.coordinate.longitude,
+                }
+            }
+        }
     }
 
     _renderSectionHeader = (sectionData, sectionID) => {
@@ -335,13 +400,28 @@ export default class ReactNativeComponentList extends Component {
     }
 
     _onListItemPress (rowData) {
-        this.props.navigator.push({
+        let navigatorProps = {
             title: rowData.title,
             component: rowData.component,
-        })
+        }
+        if(rowData.component === AMapAlone) {
+            navigatorProps['coordinate'] = this._coordinate
+        }
+
+        this.props.navigator.push(navigatorProps)
+        //console.log('a')
+        //console.log(a)
+        //console.log('a.nativeEvent')
+        //console.log(a.nativeEvent)
+        //console.log('a._targetInst')
+        //console.log(a._targetInst)
+        //console.log('a.dispatchConfig')
+        //console.log(a.dispatchConfig)
     }
 
 }
+
+export default TimerEnhance(AppEventListenerEnhance(ReactNativeComponentList))
 
 
 

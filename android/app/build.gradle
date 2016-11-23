@@ -164,6 +164,7 @@ dependencies {
     compile project(':react-native-smart-barcode')
     compile project(':react-native-smart-image-loader')
     compile project(':react-native-smart-amap-location')
+    compile project(':react-native-smart-amap')
 }
 
 // Run this once to be able to run the application with BUCK

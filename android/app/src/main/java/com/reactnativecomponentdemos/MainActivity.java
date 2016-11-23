@@ -6,6 +6,7 @@ import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
+import com.reactnativecomponent.amap.RCTAMapPackage;
 import com.reactnativecomponent.barcode.RCTCapturePackage;
 import com.reactnativecomponent.imageloader.RCTLoaderImageViewPackage;
 import com.reactnativecomponent.splashscreen.RCTSplashScreen;
@@ -46,7 +47,8 @@ public class MainActivity extends ReactActivity {
                         new RCTSwipeRefreshLayoutPackage(),  //register Module
                         new RCTCapturePackage(MainActivity.this),   //register Module
                         new RCTLoaderImageViewPackage(), //register Module
-                        new RCTAMapLocationPackage()  //register Module
+                        new RCTAMapLocationPackage(),  //register Module
+                        new RCTAMapPackage()  //register Module
                 );
             }
 
