@@ -46,6 +46,7 @@ import LoadingSpinnerOverLay from '../react-native-smart-loading-spinner-overlay
 import Barcode from '../react-native-smart-barcode/fullscreen'
 import AppEventListenerEnhanceDemo from '../react-native-smart-app-event-listener-enhance/app-event-listener-enhance'
 import AMapLocationAlone from '../react-native-smart-amap-location/amap-location-alone-ios'
+import AMapLocationSerial from '../react-native-smart-amap-location/amap-location-serial-ios'
 import AMapAlone from '../react-native-smart-amap/amap-alone'
 
 import AppEventListenerEnhance from 'react-native-smart-app-event-listener-enhance'
@@ -259,6 +260,10 @@ let componentData = {
         'amap-location-alone': {
             title: '单次定位(不依赖地图)',
             component: AMapLocationAlone,
+        },
+        'amap-location-serial': {
+            title: '连续定位(不依赖地图)',
+            component: AMapLocationSerial,
         },
     },
     'amap (高德地图)': {

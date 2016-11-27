@@ -47,6 +47,7 @@ import LoadingSpinnerOverLay from '../react-native-smart-loading-spinner-overlay
 import Barcode from '../react-native-smart-barcode/fullscreen'
 import AppEventListenerEnhanceDemo from '../react-native-smart-app-event-listener-enhance/app-event-listener-enhance'
 import AMapLocationAlone from '../react-native-smart-amap-location/amap-location-alone-ios'
+import AMapLocationSerial from '../react-native-smart-amap-location/amap-location-serial-android'
 import AMapAlone from '../react-native-smart-amap/amap-alone'
 
 import AppEventListenerEnhance from 'react-native-smart-app-event-listener-enhance'
@@ -266,6 +267,10 @@ let componentData = {
             title: '单次定位(不依赖地图)',
             component: AMapLocationAlone,
         },
+        'amap-location-serial': {
+            title: '连续定位(不依赖地图)',
+            component: AMapLocationSerial,
+        },
     },
     'amap (高德地图)': {
         'amap-alone': {
@@ -321,6 +326,32 @@ class ReactNativeComponentList extends Component {
                 />
             </View>
         );
+    }
+
+    componentDidMount() {
+        let currentRoute = this.props.navigator.navigationContext._currentRoute
+        let viewAppearCallBack = (event) => {
+            //didfocus emit in componentDidMount
+            if (currentRoute === event.data.route) {
+                console.log("self didAppear")
+            } else {
+                console.log("self didDisappear, other didAppear")
+            }
+            //console.log(currentRoute)
+            //console.log(event.data.route)
+            this.setTimeout( () => {
+                AMapLocation.init(null)
+                AMapLocation.getLocation()
+                didFocusListener.remove()
+            }, 500)
+        }
+
+        let didFocusListener = this.props.navigator.navigationContext.addListener('didfocus', viewAppearCallBack)
+        this.addAppEventListener(
+            //this.props.navigator.navigationContext.addListener('willfocus', viewAppearCallBack),
+            didFocusListener,
+            NativeAppEventEmitter.addListener('amap.location.onLocationResult', this._onLocationResult)
+        )
     }
 
     componentWillUnmount () {
