@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.reactnativecomponentdemos"
-    android:versionCode="2"
-    android:versionName="1.0.1">
+    android:versionCode="1"
+    android:versionName="1.0">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
@@ -13,7 +13,6 @@
 
     <uses-feature android:name="android.hardware.camera"/>
     <uses-feature android:name="android.hardware.camera.autofocus"/>
-
 
     <!--*************************高德地图-定位所需要权限*************************-->
     <!-- Normal Permissions 不需要运行时注册 -->
@@ -55,11 +54,11 @@
         android:targetSdkVersion="22" />
 
     <application
-        android:name=".MainApplication"
-        android:allowBackup="true"
-        android:label="@string/app_name"
-        android:icon="@mipmap/ic_launcher"
-        android:theme="@style/AppTheme">
+      android:name=".MainApplication"
+      android:allowBackup="true"
+      android:label="@string/app_name"
+      android:icon="@mipmap/ic_launcher"
+      android:theme="@style/AppTheme">
         <!--高德地图SDK key设置-->
         <meta-data
             android:name="com.amap.api.v2.apikey"
@@ -67,16 +66,16 @@
         <!--高德地图APS服务设置-->
         <service android:name="com.amap.api.location.APSService" >
         </service>
-        <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name"
-            android:configChanges="orientation|keyboardHidden">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+      <activity
+        android:name=".MainActivity"
+        android:label="@string/app_name"
+        android:configChanges="keyboard|keyboardHidden|orientation|screenSize">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+      </activity>
+      <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
     </application>
 
 </manifest>

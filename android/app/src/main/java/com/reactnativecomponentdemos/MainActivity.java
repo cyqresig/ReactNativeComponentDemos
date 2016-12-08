@@ -7,12 +7,12 @@ import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
 import com.reactnativecomponent.amap.RCTAMapPackage;
+import com.reactnativecomponent.amaplocation.RCTAMapLocationPackage;
 import com.reactnativecomponent.barcode.RCTCapturePackage;
 import com.reactnativecomponent.imageloader.RCTLoaderImageViewPackage;
 import com.reactnativecomponent.splashscreen.RCTSplashScreen;
 import com.reactnativecomponent.splashscreen.RCTSplashScreenPackage;
 import com.reactnativecomponent.swiperefreshlayout.RCTSwipeRefreshLayoutPackage;
-import com.reactnativecomponent.amaplocation.RCTAMapLocationPackage;    //import package
 
 import java.util.Arrays;
 import java.util.List;

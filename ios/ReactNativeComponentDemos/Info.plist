@@ -36,9 +36,9 @@
 		</dict>
 	</dict>
 	<key>NSCameraUsageDescription</key>
-	<string>ReactNativeComponentDemos wants to access your camera</string>
+	<string>ReactNativeComponentDemos wants to use your camera</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>ReactNativeComponentDemos想使用定位</string>
+	<string>ReactNativeComponentDemos wants to use your location</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>location</string>
