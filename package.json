@@ -5,7 +5,8 @@
   "description": "Demos for react-native components of 'react-native-component'.",
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "test": "jest",
+    "android-release": "react-native run-android --variant=release"
   },
   "repository": {
     "type": "git",
@@ -32,7 +33,7 @@
     "react-native-smart-gesture-password": "^2.1.0",
     "react-native-smart-loading-spinner-overlay": "^1.0.1",
     "react-native-smart-parabola": "^1.0.2",
-    "react-native-smart-pull-to-refresh-listview": "^1.5.1",
+    "react-native-smart-pull-to-refresh-listview": "^1.6.0",
     "react-native-smart-image-loader": "^1.0.0",
     "react-native-smart-security-text": "^1.0.1",
     "react-native-smart-splash-screen": "^2.1.0",
