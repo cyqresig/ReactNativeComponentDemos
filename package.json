@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest",
-    "android-release": "react-native run-android --variant=release"
+    "android-release": "react-native run-android --variant=release",
+    "android-apk-manual-install": "adb install ~/temp/app-release.apk"
   },
   "repository": {
     "type": "git",
@@ -24,35 +25,36 @@
   },
   "homepage": "https://github.com/cyqresig/ReactNativeComponentDemos#readme",
   "dependencies": {
-    "react": "15.3.2",
-    "react-native": "^0.36.1",
+    "react": "15.4.1",
+    "react-native": "^0.39.0",
+    "react-native-scrollable-tab-view": "^0.7.0",
+    "react-native-smart-amap": "^1.0.0",
+    "react-native-smart-amap-location": "^1.1.0",
+    "react-native-smart-app-event-listener-enhance": "^1.1.1",
     "react-native-smart-badge": "^1.1.1",
     "react-native-smart-barcode": "^1.0.0",
     "react-native-smart-button": "^1.5.0",
     "react-native-smart-corner-label": "^1.1.1",
     "react-native-smart-gesture-password": "^2.1.0",
+    "react-native-smart-image-loader": "^1.0.0",
     "react-native-smart-loading-spinner-overlay": "^1.0.1",
     "react-native-smart-parabola": "^1.0.2",
-    "react-native-smart-pull-to-refresh-listview": "^1.6.0",
-    "react-native-smart-image-loader": "^1.0.0",
+    "react-native-smart-pull-to-refresh-listview": "^1.6.1",
     "react-native-smart-security-text": "^1.0.1",
     "react-native-smart-splash-screen": "^2.1.0",
     "react-native-smart-sudoku-grid": "^1.0.9",
     "react-native-smart-timer-enhance": "^1.0.2",
     "react-native-smart-toast": "^1.1.1",
     "react-native-smart-touch-id": "^1.0.4",
-    "react-native-smart-app-event-listener-enhance": "^1.1.1",
-    "react-native-smart-amap-location": "^1.1.0",
-    "react-native-smart-amap": "^1.0.0"
+    "react-timer-mixin": "^0.13.3"
   },
   "jest": {
-    "preset": "jest-react-native"
+    "preset": "react-native"
   },
   "devDependencies": {
-    "babel-jest": "16.0.0",
+    "babel-jest": "17.0.2",
     "babel-preset-react-native": "1.9.0",
-    "jest": "16.0.2",
-    "jest-react-native": "16.0.0",
-    "react-test-renderer": "15.3.2"
+    "jest": "17.0.3",
+    "react-test-renderer": "15.4.1"
   }
 }
