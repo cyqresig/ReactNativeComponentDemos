@@ -42,6 +42,7 @@ import PullToRefreshListViewDemo6 from '../react-native-smart-pull-to-refresh-li
 import PullToRefreshListViewDemo7 from '../react-native-smart-pull-to-refresh-listview/react-native-smart-pull-to-refresh-listview-demo7'
 import StickyHeaderAndroidDemo from '../react-native-smart-pull-to-refresh-listview/sticky-header-android'
 import StickyHeaderAndroidPullToRefreshDemo from '../react-native-smart-pull-to-refresh-listview/sticky-header-android-pull-to-refresh'
+import ScrollableTabViewPullToRefreshDemo from '../react-native-smart-pull-to-refresh-listview/use-with-react-native-scrollable-tab-view'
 import ListImageLoaderDemo from '../react-native-smart-image-loader/react-native-smart-pull-to-refresh-listview+image-loader'
 import ListImageLoaderAndroidDemo from '../react-native-smart-image-loader/react-native-smart-pull-to-refresh-listview+image-loader(android)'
 import Toast from '../react-native-smart-toast/toast-text'
@@ -236,6 +237,10 @@ let componentData = {
         'sticky-header-pull-to-refresh': {
             title: 'sticky-header-pull-to-refresh',
             component: StickyHeaderAndroidPullToRefreshDemo,
+        },
+        'use-with-react-native-scrollable-tab-view': {
+            title: 'use-with-react-native-scrollable-tab-view',
+            component: ScrollableTabViewPullToRefreshDemo,
         },
     },
     'toast': {
