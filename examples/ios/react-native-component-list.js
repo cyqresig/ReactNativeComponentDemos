@@ -40,6 +40,7 @@ import PullToRefreshListViewDemo4 from '../react-native-smart-pull-to-refresh-li
 import PullToRefreshListViewDemo5 from '../react-native-smart-pull-to-refresh-listview/react-native-smart-pull-to-refresh-listview-demo5'
 import PullToRefreshListViewDemo6 from '../react-native-smart-pull-to-refresh-listview/react-native-smart-pull-to-refresh-listview-demo6'
 import PullToRefreshListViewDemo7 from '../react-native-smart-pull-to-refresh-listview/react-native-smart-pull-to-refresh-listview-demo7'
+import StickyHeaderAndroidPullToRefreshDemo from '../react-native-smart-pull-to-refresh-listview/sticky-header-ios-pull-to-refresh'
 import ListImageLoaderDemo from '../react-native-smart-image-loader/react-native-smart-pull-to-refresh-listview+image-loader'
 import Toast from '../react-native-smart-toast/toast-text'
 import LoadingSpinnerOverLay from '../react-native-smart-loading-spinner-overlay/loading-spinner-overlay'
@@ -224,6 +225,10 @@ let componentData = {
         'listview-infinite': {
             title: 'listview-infinite',
             component: PullToRefreshListViewDemo7,
+        },
+        'sticky-header-pull-to-refresh': {
+            title: 'sticky-header-pull-to-refresh',
+            component: StickyHeaderAndroidPullToRefreshDemo,
         },
     },
     'toast': {

@@ -54,7 +54,7 @@ class PullToRefreshListViewDemo extends Component {
             <PullToRefreshListView
                 ref={ (component) => this._pullToRefreshListView = component }
                 viewType={PullToRefreshListView.constants.viewType.listView}
-                contentContainerStyle={{backgroundColor: 'yellow', }}
+                contentContainerStyle={{backgroundColor: 'transparent', }}
                 style={{marginTop: Platform.OS == 'ios' ? 64 : 56, }}
                 initialListSize={100}
                 enableEmptySections={true}
@@ -120,25 +120,25 @@ class PullToRefreshListViewDemo extends Component {
         switch(pullState) {
             case refresh_none:
                 return (
-                    <View style={{height: 35, justifyContent: 'center', alignItems: 'center', backgroundColor: 'pink',}}>
+                    <View style={{height: 35, justifyContent: 'center', alignItems: 'center', backgroundColor: 'transparent',}}>
                         <Text>pull down to refresh</Text>
                     </View>
                 )
             case refresh_idle:
                 return (
-                    <View style={{height: 35, justifyContent: 'center', alignItems: 'center', backgroundColor: 'pink',}}>
+                    <View style={{height: 35, justifyContent: 'center', alignItems: 'center', backgroundColor: 'transparent',}}>
                         <Text>pull down to refresh {pullDistancePercent}%</Text>
                     </View>
                 )
             case will_refresh:
                 return (
-                    <View style={{height: 35, justifyContent: 'center', alignItems: 'center', backgroundColor: 'pink',}}>
+                    <View style={{height: 35, justifyContent: 'center', alignItems: 'center', backgroundColor: 'transparent',}}>
                         <Text>release to refresh {pullDistancePercent > 100 ? 100 : pullDistancePercent}%</Text>
                     </View>
                 )
             case refreshing:
                 return (
-                    <View style={{flexDirection: 'row', height: 35, justifyContent: 'center', alignItems: 'center', backgroundColor: 'pink',}}>
+                    <View style={{flexDirection: 'row', height: 35, justifyContent: 'center', alignItems: 'center', backgroundColor: 'transparent',}}>
                         {this._renderActivityIndicator()}<Text>refreshing</Text>
                     </View>
                 )
@@ -152,19 +152,19 @@ class PullToRefreshListViewDemo extends Component {
         switch(pullState) {
             case load_more_none:
                 return (
-                    <View style={{height: 35, justifyContent: 'center', alignItems: 'center', backgroundColor: 'pink',}}>
+                    <View style={{height: 35, justifyContent: 'center', alignItems: 'center', backgroundColor: 'transparent',}}>
                         <Text>pull up to load more</Text>
                     </View>
                 )
             case loading_more:
                 return (
-                    <View style={{flexDirection: 'row', height: 35, justifyContent: 'center', alignItems: 'center', backgroundColor: 'pink',}}>
+                    <View style={{flexDirection: 'row', height: 35, justifyContent: 'center', alignItems: 'center', backgroundColor: 'transparent',}}>
                         {this._renderActivityIndicator()}<Text>loading</Text>
                     </View>
                 )
             case loaded_all:
                 return (
-                    <View style={{height: 35, justifyContent: 'center', alignItems: 'center', backgroundColor: 'pink',}}>
+                    <View style={{height: 35, justifyContent: 'center', alignItems: 'center', backgroundColor: 'transparent',}}>
                         <Text>no more</Text>
                     </View>
                 )
@@ -181,6 +181,9 @@ class PullToRefreshListViewDemo extends Component {
             let endIndex = itemIndex + pageSize <= imageUrls.length ? itemIndex + pageSize : imageUrls.length - itemIndex
             let refreshedDataList = imageUrls.slice(startIndex, endIndex)
             itemIndex = endIndex
+
+            //need to clear ListRowRefsCache manually
+            this._pullToRefreshListView.clearListRowRefsCache()
 
             this.setState({
                 dataList: refreshedDataList,

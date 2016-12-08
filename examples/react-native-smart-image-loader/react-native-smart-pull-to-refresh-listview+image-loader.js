@@ -22,7 +22,7 @@ import PullToRefreshListView from 'react-native-smart-pull-to-refresh-listview'
 import ImageLoader from 'react-native-smart-image-loader'
 import imageUrls from './imageUrls'
 
-let pageSize = 100
+let pageSize = 20
 let itemIndex = 0
 
 class PullToRefreshListViewDemo extends Component {
@@ -39,12 +39,9 @@ class PullToRefreshListViewDemo extends Component {
         let dataList = []
 
         this.state = {
-            first: true,
             dataList: dataList,
             dataSource: this._dataSource.cloneWithRows(dataList),
         }
-
-        this._refList = []
     }
 
     componentDidMount () {
@@ -57,7 +54,7 @@ class PullToRefreshListViewDemo extends Component {
             <PullToRefreshListView
                 ref={ (component) => this._pullToRefreshListView = component }
                 viewType={PullToRefreshListView.constants.viewType.listView}
-                contentContainerStyle={{backgroundColor: 'yellow', }}
+                contentContainerStyle={{backgroundColor: 'transparent', }}
                 style={{marginTop: Platform.OS == 'ios' ? 64 : 56, }}
                 initialListSize={100}
                 enableEmptySections={true}
@@ -65,44 +62,18 @@ class PullToRefreshListViewDemo extends Component {
                 pageSize={100}
                 renderRow={this._renderRow}
                 //renderSeparator={(sectionID, rowID) => <View style={styles.separator} />}
-                listItemProps={{overflow: 'hidden', height: 150, }}
+                //listItemProps={{overflow: 'hidden', height: 150, }}
+                listItemProps={{ style: {overflow: 'hidden', height: 150,}, }}
                 renderHeader={this._renderHeader}
                 renderFooter={this._renderFooter}
                 onRefresh={this._onRefresh}
                 onLoadMore={this._onLoadMore}
                 autoLoadMore={true}
                 //onEndReachedThreshold={15}
-                onChangeVisibleRows={this._onChangeVisibleRows}
             />
         )
 
     }
-
-    //_onChangeVisibleRows = (visibleRows, changedRows) => {
-    //    //console.log( changedRows.s1)
-    //    Object.keys(changedRows.s1).forEach( rowID => {
-    //        //console.log(`rowID = ${rowID}`)
-    //        let rowRef = this._refList[ rowID ];
-    //        if (changedRows.s1[ rowID ]) {
-    //            console.log(`show rowID = ${rowID}`)
-    //            rowRef.show()
-    //        }
-    //        else {
-    //            console.log(`hide rowID = ${rowID}`)
-    //            rowRef.hide()
-    //        }
-    //    })
-    //    //for(let rowID of changedRows.s1) {
-    //    //    console.log(`rowID = ${rowID}`)
-    //    //    let rowRef = this._refList[ rowID ];
-    //    //    if (sectionItem[ rowID ]) {
-    //    //        rowRef.show()
-    //    //    }
-    //    //    else {
-    //    //        rowRef.hide()
-    //    //    }
-    //    //}
-    //}
 
     _renderRow = (rowData, sectionID, rowID) => {
         return (
@@ -131,25 +102,25 @@ class PullToRefreshListViewDemo extends Component {
         switch(pullState) {
             case refresh_none:
                 return (
-                    <View style={{height: 35, justifyContent: 'center', alignItems: 'center', backgroundColor: 'pink',}}>
+                    <View style={{height: 35, justifyContent: 'center', alignItems: 'center', backgroundColor: 'transparent',}}>
                         <Text>pull down to refresh</Text>
                     </View>
                 )
             case refresh_idle:
                 return (
-                    <View style={{height: 35, justifyContent: 'center', alignItems: 'center', backgroundColor: 'pink',}}>
+                    <View style={{height: 35, justifyContent: 'center', alignItems: 'center', backgroundColor: 'transparent',}}>
                         <Text>pull down to refresh {pullDistancePercent}%</Text>
                     </View>
                 )
             case will_refresh:
                 return (
-                    <View style={{height: 35, justifyContent: 'center', alignItems: 'center', backgroundColor: 'pink',}}>
+                    <View style={{height: 35, justifyContent: 'center', alignItems: 'center', backgroundColor: 'transparent',}}>
                         <Text>release to refresh {pullDistancePercent > 100 ? 100 : pullDistancePercent}%</Text>
                     </View>
                 )
             case refreshing:
                 return (
-                    <View style={{flexDirection: 'row', height: 35, justifyContent: 'center', alignItems: 'center', backgroundColor: 'pink',}}>
+                    <View style={{flexDirection: 'row', height: 35, justifyContent: 'center', alignItems: 'center', backgroundColor: 'transparent',}}>
                         {this._renderActivityIndicator()}<Text>refreshing</Text>
                     </View>
                 )
@@ -163,19 +134,19 @@ class PullToRefreshListViewDemo extends Component {
         switch(pullState) {
             case load_more_none:
                 return (
-                    <View style={{height: 35, justifyContent: 'center', alignItems: 'center', backgroundColor: 'pink',}}>
+                    <View style={{height: 35, justifyContent: 'center', alignItems: 'center', backgroundColor: 'transparent',}}>
                         <Text>pull up to load more</Text>
                     </View>
                 )
             case loading_more:
                 return (
-                    <View style={{flexDirection: 'row', height: 35, justifyContent: 'center', alignItems: 'center', backgroundColor: 'pink',}}>
+                    <View style={{flexDirection: 'row', height: 35, justifyContent: 'center', alignItems: 'center', backgroundColor: 'transparent',}}>
                         {this._renderActivityIndicator()}<Text>loading</Text>
                     </View>
                 )
             case loaded_all:
                 return (
-                    <View style={{height: 35, justifyContent: 'center', alignItems: 'center', backgroundColor: 'pink',}}>
+                    <View style={{height: 35, justifyContent: 'center', alignItems: 'center', backgroundColor: 'transparent',}}>
                         <Text>no more</Text>
                     </View>
                 )
@@ -185,6 +156,10 @@ class PullToRefreshListViewDemo extends Component {
     _onRefresh = () => {
         //console.log('outside _onRefresh start...')
 
+        //console.log(`this._pullToRefreshListView._listItemRefs`)
+        //console.log(this._pullToRefreshListView._listItemRefs.length)
+        //console.log(Object.keys(this._pullToRefreshListView._listItemRefs).length)
+
         //simulate request data
         this.setTimeout( () => {
             itemIndex = 0
@@ -192,6 +167,9 @@ class PullToRefreshListViewDemo extends Component {
             let endIndex = itemIndex + pageSize <= imageUrls.length ? itemIndex + pageSize : imageUrls.length - itemIndex
             let refreshedDataList = imageUrls.slice(startIndex, endIndex)
             itemIndex = endIndex
+
+            //need to clear ListRowRefsCache manually
+            this._pullToRefreshListView.clearListRowRefsCache()
 
             this.setState({
                 dataList: refreshedDataList,
