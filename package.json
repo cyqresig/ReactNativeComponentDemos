@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest",
-    "android-release": "react-native run-android --variant=release",
+    "android-release": "cd android && ./gradlew assembleRelease",
     "android-apk-manual-install": "adb install ~/temp/app-release.apk"
   },
   "repository": {
