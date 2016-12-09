@@ -40,6 +40,7 @@ import PullToRefreshListViewDemo4 from '../react-native-smart-pull-to-refresh-li
 import PullToRefreshListViewDemo5 from '../react-native-smart-pull-to-refresh-listview/react-native-smart-pull-to-refresh-listview-demo5'
 import PullToRefreshListViewDemo6 from '../react-native-smart-pull-to-refresh-listview/react-native-smart-pull-to-refresh-listview-demo6'
 import PullToRefreshListViewDemo7 from '../react-native-smart-pull-to-refresh-listview/react-native-smart-pull-to-refresh-listview-demo7'
+import PullToRefreshListViewDemo8 from '../react-native-smart-pull-to-refresh-listview/react-native-smart-pull-to-refresh-listview-demo8'
 import StickyHeaderAndroidPullToRefreshDemo from '../react-native-smart-pull-to-refresh-listview/sticky-header-ios-pull-to-refresh'
 import ScrollableTabViewPullToRefreshDemo from '../react-native-smart-pull-to-refresh-listview/use-with-react-native-scrollable-tab-view'
 import ListImageLoaderDemo from '../react-native-smart-image-loader/react-native-smart-pull-to-refresh-listview+image-loader'
@@ -226,6 +227,10 @@ let componentData = {
         'listview-infinite': {
             title: 'listview-infinite',
             component: PullToRefreshListViewDemo7,
+        },
+        'listview-only-one-row': {
+            title: 'listview-only-one-row',
+            component: PullToRefreshListViewDemo8,
         },
         'sticky-header-pull-to-refresh': {
             title: 'sticky-header-pull-to-refresh',
