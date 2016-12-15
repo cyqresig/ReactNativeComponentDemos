@@ -25,6 +25,7 @@ import IconButton from '../react-native-smart-button/icon-button'
 import BadgeButton from '../react-native-smart-button/badge-button'
 import LoadingButton from '../react-native-smart-button/loading-button'
 import ThreeColumns from '../react-native-smart-sudoku-grid/three-columns'
+import SortableThreeColumns from '../react-native-smart-sortable-sudoku-grid/three-columns'
 import NumberBadge from '../react-native-smart-badge/number-badge'
 import EmptyBadge from '../react-native-smart-badge/empty-badge'
 import CustomBadge from '../react-native-smart-badge/custom-badge'
@@ -153,6 +154,12 @@ let componentData = {
         'sudoku-grid': {
             title: 'sudoku-grid',
             component: ThreeColumns,
+        },
+    },
+    'sortable-sudoku-grid': {
+        'sortable-sudoku-grid': {
+            title: 'sortable-sudoku-grid',
+            component: SortableThreeColumns,
         },
     },
     'badge': {
