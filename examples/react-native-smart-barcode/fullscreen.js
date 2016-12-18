@@ -1,5 +1,3 @@
-
-
 import React, {
     Component,
 } from 'react'
@@ -7,15 +5,21 @@ import {
     View,
     StyleSheet,
     Alert,
+    ActivityIndicator,
+    ProgressBarAndroid,
+    ActivityIndicatorIOS,
+    Dimensions,
 } from 'react-native'
 
 import Barcode from 'react-native-smart-barcode'
 import TimerEnhance from 'react-native-smart-timer-enhance'
 
+//const { width: deviceWidth, height: deviceHeight } = Dimensions.get('window')
+
 class BarcodeTest extends Component {
 
     // 构造
-    constructor(props) {
+    constructor (props) {
         super(props);
         // 初始状态
         this.state = {
@@ -23,20 +27,27 @@ class BarcodeTest extends Component {
         };
     }
 
-    render() {
+    render () {
 
         return (
-            <View style={{flex: 1, backgroundColor: 'black',}}>
-                {this.state.viewAppear ? <Barcode style={{flex: 1, }}
+            <View style={{flex: 1, backgroundColor: 'black', justifyContent: 'center', alignItems: 'center',}}>
+                {this.state.viewAppear ? <Barcode style={{flex: 1, alignSelf: 'stretch', }}
                                                   ref={ component => this._barCode = component }
                                                   onBarCodeRead={this._onBarCodeRead}/> : null}
+
+                {!this.state.viewAppear ? this._renderActivityIndicator() : null}
             </View>
         )
     }
+//
+//{!this.state.viewAppear ?
+//<View style={{ position: 'absolute', left: 0, top: 0, width: deviceWidth, deviceHeight: deviceHeight, justifyContent: 'center', alignItems: 'center'}}>
+//{this._renderActivityIndicator()}
+//</View> : null}
 
-    componentDidMount() {
+    componentDidMount () {
         let viewAppearCallBack = (event) => {
-            this.setTimeout( () => {
+            this.setTimeout(() => {
                 this.setState({
                     viewAppear: true,
                 })
@@ -57,7 +68,7 @@ class BarcodeTest extends Component {
         console.log(`e.nativeEvent.data.type = ${e.nativeEvent.data.type}, e.nativeEvent.data.code = ${e.nativeEvent.data.code}`)
         this._stopScan()
         Alert.alert(e.nativeEvent.data.type, e.nativeEvent.data.code, [
-            {text: 'OK', onPress: () => this._startScan()},
+            { text: 'OK', onPress: () => this._startScan() },
         ])
     }
 
@@ -69,6 +80,23 @@ class BarcodeTest extends Component {
         this._barCode.stopScan()
     }
 
+    _renderActivityIndicator () {
+        return ActivityIndicator ? (
+            <ActivityIndicator
+                style={{position: 'relative', left: 1, top: 1,}}
+                animating={true}
+                size={'large'}/>
+        ) : Platform.OS == 'android' ?
+            (
+                <ProgressBarAndroid
+                    styleAttr={'large'}/>
+
+            ) : (
+            <ActivityIndicatorIOS
+                animating={true}
+                size={'large'}/>
+        )
+    }
 }
 
 export default TimerEnhance(BarcodeTest)
