@@ -137,6 +137,7 @@ class PullToRefreshListViewDemo extends Component {
     }
 
     _renderFooter = (viewState) => {
+        //console.log(`_renderFooter viewState.pullState = ${viewState.pullState}`)
         let {pullState, pullDistancePercent} = viewState
         let {load_more_none, load_more_idle, will_load_more, loading_more, loaded_all, } = PullToRefreshListView.constants.viewState
         pullDistancePercent = Math.round(pullDistancePercent * 100)

@@ -37,6 +37,8 @@ class PullToRefreshListViewDemo extends Component {
             dataList: dataList,
             dataSource: this._dataSource.cloneWithRows(dataList),
         }
+
+        this._onRefreshAddNum = 0
     }
 
     componentDidMount () {
@@ -62,7 +64,7 @@ class PullToRefreshListViewDemo extends Component {
                 renderFooter={this._renderFooter}
                 onRefresh={this._onRefresh}
                 onLoadMore={this._onLoadMore}
-                autoLoadMore={true}
+                //autoLoadMore={true}
                 //onEndReachedThreshold={15}
             />
         )
@@ -138,25 +140,34 @@ class PullToRefreshListViewDemo extends Component {
         let {pullState, pullDistancePercent} = viewState
         let {load_more_none, load_more_idle, will_load_more, loading_more, loaded_all, } = PullToRefreshListView.constants.viewState
         pullDistancePercent = Math.round(pullDistancePercent * 100)
-        switch (pullState) {
+        switch(pullState) {
             case load_more_none:
                 return (
-                    <View
-                        style={{height: 35, justifyContent: 'center', alignItems: 'center', backgroundColor: 'transparent',}}>
+                    <View style={{height: 35, justifyContent: 'center', alignItems: 'center', backgroundColor: 'transparent',}}>
                         <Text>pull up to load more</Text>
+                    </View>
+                )
+            case load_more_idle:
+                return (
+                    <View style={{height: 35, justifyContent: 'center', alignItems: 'center', backgroundColor: 'transparent',}}>
+                        <Text>pull up to load more {pullDistancePercent}%</Text>
+                    </View>
+                )
+            case will_load_more:
+                return (
+                    <View style={{height: 35, justifyContent: 'center', alignItems: 'center', backgroundColor: 'transparent',}}>
+                        <Text>release to load more {pullDistancePercent > 100 ? 100 : pullDistancePercent}%</Text>
                     </View>
                 )
             case loading_more:
                 return (
-                    <View
-                        style={{flexDirection: 'row', height: 35, justifyContent: 'center', alignItems: 'center', backgroundColor: 'transparent',}}>
+                    <View style={{flexDirection: 'row', height: 35, justifyContent: 'center', alignItems: 'center', backgroundColor: 'transparent',}}>
                         {this._renderActivityIndicator()}<Text>loading</Text>
                     </View>
                 )
             case loaded_all:
                 return (
-                    <View
-                        style={{height: 35, justifyContent: 'center', alignItems: 'center', backgroundColor: 'transparent',}}>
+                    <View style={{height: 35, justifyContent: 'center', alignItems: 'center', backgroundColor: 'transparent',}}>
                         <Text>no more</Text>
                     </View>
                 )
@@ -170,7 +181,14 @@ class PullToRefreshListViewDemo extends Component {
         this.setTimeout(() => {
 
             //console.log('outside _onRefresh end...')
-            let addNum = 1
+            //let addNum = 0
+            let length = this.state.dataList.length
+            if(length >= 50) {
+                this._onRefreshAddNum = 0
+            }
+            let addNum = this._onRefreshAddNum
+            //this._onRefreshAddNum++
+            this._onRefreshAddNum = this._onRefreshAddNum + 26
             let refreshedDataList = []
             for (let i = 0; i < addNum; i++) {
                 refreshedDataList.push({
@@ -184,7 +202,7 @@ class PullToRefreshListViewDemo extends Component {
             })
             this._pullToRefreshListView.endRefresh()
 
-        }, 3000)
+        }, 2000)
     }
 
     _onLoadMore = () => {
@@ -195,7 +213,8 @@ class PullToRefreshListViewDemo extends Component {
             //console.log('outside _onLoadMore end...')
 
             let length = this.state.dataList.length
-            let addNum = 0
+            //let addNum = 10
+            let addNum = 26
             let addedDataList = []
             for (let i = length; i < length + addNum; i++) {
                 addedDataList.push({
@@ -208,13 +227,13 @@ class PullToRefreshListViewDemo extends Component {
                 dataSource: this._dataSource.cloneWithRows(newDataList),
             })
 
-            let loadedAll
-            if (length >= 1) {
+            let loadedAll = false
+            if (length > 50) {
                 loadedAll = true
-                this._pullToRefreshListView.endLoadMore(loadedAll)
             }
+            this._pullToRefreshListView.endLoadMore(loadedAll)
 
-        }, 3000)
+        }, 1000)
     }
 
     _renderActivityIndicator () {

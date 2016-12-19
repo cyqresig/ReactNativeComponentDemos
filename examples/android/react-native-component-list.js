@@ -243,28 +243,28 @@ let componentData = {
             title: 'listview-infinite',
             component: PullToRefreshListViewDemo7,
         },
-        'listview-only-one-row': {
-            title: 'listview-only-one-row',
+        'listview-no-data': {
+            title: 'listview-no-data',
             component: PullToRefreshListViewDemo8,
         },
         'listview-no-data-auto-load': {
-            title: 'listview-no-data-auto-load (下拉刷新+自动加载更多+初始无数据)',
+            title: 'listview-no-data-auto-load',
             component: PullToRefreshListViewDemo9,
         },
         'listview-no-data-2': {
-            title: 'listview-no-data-2 (下拉刷新+上拉加载+初始无数据)',
+            title: 'listview-no-data-2',
             component: PullToRefreshListViewDemo12,
         },
         'listview-no-data-auto-load-2': {
-            title: 'listview-no-data-auto-load-2 (下拉刷新+自动加载更多+初始无数据)',
+            title: 'listview-no-data-auto-load-2',
             component: PullToRefreshListViewDemo13,
         },
         'listview-response-almost-immediately': {
-            title: 'listview-response-almost-immediately (下拉刷新+上拉加载+立即响应请求)',
+            title: 'listview-response-almost-immediately',
             component: PullToRefreshListViewDemo10,
         },
         'listview-response-almost-immediately-auto-load': {
-            title: 'listview-response-almost-immediately-auto-load (下拉刷新+自动加载更多+立即响应请求)',
+            title: 'listview-response-almost-immediately-auto-load',
             component: PullToRefreshListViewDemo11,
         },
         'sticky-header': {
