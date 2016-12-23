@@ -23,6 +23,17 @@
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		9F7BD4BC1E0922F9002596CD /* libRCTCameraRoll.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F7BD4A81E0922EC002596CD /* libRCTCameraRoll.a */; };
+		9FA54E4E1E0D18AE006DA962 /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9FA54E4D1E0D18AE006DA962 /* AlipaySDK.bundle */; };
+		9FA54E501E0D197E006DA962 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA54E4F1E0D197E006DA962 /* QuartzCore.framework */; };
+		9FA54E521E0D1985006DA962 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA54E511E0D1985006DA962 /* CoreText.framework */; };
+		9FA54E541E0D198E006DA962 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA54E531E0D198E006DA962 /* CoreGraphics.framework */; };
+		9FA54E561E0D1996006DA962 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA54E551E0D1996006DA962 /* UIKit.framework */; };
+		9FA54E581E0D199E006DA962 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA54E571E0D199E006DA962 /* Foundation.framework */; };
+		9FA54E5A1E0D19A9006DA962 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA54E591E0D19A9006DA962 /* CFNetwork.framework */; };
+		9FA54E5C1E0D19D4006DA962 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA54E5B1E0D19D4006DA962 /* CoreMotion.framework */; };
+		9FA54E5E1E0D1A68006DA962 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA54E5D1E0D1A68006DA962 /* AlipaySDK.framework */; };
+		9FA54E651E0D1ECF006DA962 /* libRCTAliPay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA54E641E0D1AB0006DA962 /* libRCTAliPay.a */; };
 		9FFE70991DF92CA70035845D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FFE70971DF92CA70035845D /* LaunchScreen.xib */; };
 		9FFE709A1DF92CA70035845D /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FFE70981DF92CA70035845D /* splash.png */; };
 		9FFE70C21DF92CC50035845D /* libRCTSplashScreen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FFE70C11DF92CB90035845D /* libRCTSplashScreen.a */; };
@@ -143,6 +154,20 @@
 			remoteGlobalIDString = 58B5119B1A9E6C1200147676;
 			remoteInfo = RCTText;
 		};
+		9F7BD4A71E0922EC002596CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F7BD49D1E0922EB002596CD /* RCTCameraRoll.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 58B5115D1A9E6B3D00147676;
+			remoteInfo = RCTCameraRoll;
+		};
+		9FA54E631E0D1AB0006DA962 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FA54E5F1E0D1AB0006DA962 /* RCTAliPay.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9F303CF51E0B7B94002A4A05;
+			remoteInfo = RCTAliPay;
+		};
 		9FFE70A11DF92CA70035845D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 00C302BB1ABCB91800DB3ED1 /* RCTImage.xcodeproj */;
@@ -258,6 +283,17 @@
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		9F7BD49D1E0922EB002596CD /* RCTCameraRoll.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTCameraRoll.xcodeproj; path = "../node_modules/react-native/Libraries/CameraRoll/RCTCameraRoll.xcodeproj"; sourceTree = "<group>"; };
+		9FA54E4D1E0D18AE006DA962 /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
+		9FA54E4F1E0D197E006DA962 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9FA54E511E0D1985006DA962 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		9FA54E531E0D198E006DA962 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9FA54E551E0D1996006DA962 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9FA54E571E0D199E006DA962 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9FA54E591E0D19A9006DA962 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		9FA54E5B1E0D19D4006DA962 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		9FA54E5D1E0D1A68006DA962 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
+		9FA54E5F1E0D1AB0006DA962 /* RCTAliPay.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAliPay.xcodeproj; path = "../node_modules/react-native-smart-alipay/ios/RCTAliPay/RCTAliPay.xcodeproj"; sourceTree = "<group>"; };
 		9FFE70971DF92CA70035845D /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		9FFE70981DF92CA70035845D /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
 		9FFE70BC1DF92CB90035845D /* RCTSplashScreen.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSplashScreen.xcodeproj; path = "../node_modules/react-native-smart-splash-screen/ios/RCTSplashScreen/RCTSplashScreen.xcodeproj"; sourceTree = "<group>"; };
@@ -299,6 +335,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FA54E651E0D1ECF006DA962 /* libRCTAliPay.a in Frameworks */,
+				9FA54E5C1E0D19D4006DA962 /* CoreMotion.framework in Frameworks */,
+				9FA54E5A1E0D19A9006DA962 /* CFNetwork.framework in Frameworks */,
+				9FA54E581E0D199E006DA962 /* Foundation.framework in Frameworks */,
+				9FA54E561E0D1996006DA962 /* UIKit.framework in Frameworks */,
+				9FA54E541E0D198E006DA962 /* CoreGraphics.framework in Frameworks */,
+				9FA54E521E0D1985006DA962 /* CoreText.framework in Frameworks */,
+				9FA54E501E0D197E006DA962 /* QuartzCore.framework in Frameworks */,
+				9F7BD4BC1E0922F9002596CD /* libRCTCameraRoll.a in Frameworks */,
 				9FFE71251DF93CCF0035845D /* libRCTAMap.a in Frameworks */,
 				9FFE711E1DF93CC10035845D /* libRCTAMapLocation.a in Frameworks */,
 				9FFE71151DF935E80035845D /* CoreLocation.framework in Frameworks */,
@@ -312,6 +357,7 @@
 				9FFE70EE1DF933BF0035845D /* libRCTImageLoader.a in Frameworks */,
 				9FFE70E41DF932850035845D /* libRCTBarcode.a in Frameworks */,
 				9FFE70FB1DF934910035845D /* AMapLocationKit.framework in Frameworks */,
+				9FA54E5E1E0D1A68006DA962 /* AlipaySDK.framework in Frameworks */,
 				9FFE70DA1DF932350035845D /* libRCTTouchId.a in Frameworks */,
 				9FFE70C21DF92CC50035845D /* libRCTSplashScreen.a in Frameworks */,
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
@@ -454,6 +500,8 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				9FA54E5F1E0D1AB0006DA962 /* RCTAliPay.xcodeproj */,
+				9F7BD49D1E0922EB002596CD /* RCTCameraRoll.xcodeproj */,
 				9FFE711F1DF93CCB0035845D /* RCTAMap.xcodeproj */,
 				9FFE71181DF93CB80035845D /* RCTAMapLocation.xcodeproj */,
 				9FFE70E81DF933AF0035845D /* RCTImageLoader.xcodeproj */,
@@ -487,6 +535,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				9FA54E4C1E0D18AE006DA962 /* AliPayResouces */,
 				9FFE71261DF93D960035845D /* AMapResources */,
 				9FFE71161DF939270035845D /* AMap.bundle */,
 				9FFE70F51DF934910035845D /* Frameworks */,
@@ -507,6 +556,30 @@
 			children = (
 				13B07F961A680F5B00A75B9A /* ReactNativeComponentDemos.app */,
 				00E356EE1AD99517003FC87E /* ReactNativeComponentDemosTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F7BD49E1E0922EB002596CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F7BD4A81E0922EC002596CD /* libRCTCameraRoll.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9FA54E4C1E0D18AE006DA962 /* AliPayResouces */ = {
+			isa = PBXGroup;
+			children = (
+				9FA54E4D1E0D18AE006DA962 /* AlipaySDK.bundle */,
+			);
+			path = AliPayResouces;
+			sourceTree = "<group>";
+		};
+		9FA54E601E0D1AB0006DA962 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9FA54E641E0D1AB0006DA962 /* libRCTAliPay.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -571,6 +644,14 @@
 		9FFE70F51DF934910035845D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9FA54E5D1E0D1A68006DA962 /* AlipaySDK.framework */,
+				9FA54E5B1E0D19D4006DA962 /* CoreMotion.framework */,
+				9FA54E591E0D19A9006DA962 /* CFNetwork.framework */,
+				9FA54E571E0D199E006DA962 /* Foundation.framework */,
+				9FA54E551E0D1996006DA962 /* UIKit.framework */,
+				9FA54E531E0D198E006DA962 /* CoreGraphics.framework */,
+				9FA54E511E0D1985006DA962 /* CoreText.framework */,
+				9FA54E4F1E0D197E006DA962 /* QuartzCore.framework */,
 				9FFE71141DF935E80035845D /* CoreLocation.framework */,
 				9FFE710B1DF934FA0035845D /* JavaScriptCore.framework */,
 				9FFE71091DF934F30035845D /* SystemConfiguration.framework */,
@@ -693,6 +774,10 @@
 					ProjectRef = 00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */;
 				},
 				{
+					ProductGroup = 9FA54E601E0D1AB0006DA962 /* Products */;
+					ProjectRef = 9FA54E5F1E0D1AB0006DA962 /* RCTAliPay.xcodeproj */;
+				},
+				{
 					ProductGroup = 9FFE71201DF93CCB0035845D /* Products */;
 					ProjectRef = 9FFE711F1DF93CCB0035845D /* RCTAMap.xcodeproj */;
 				},
@@ -707,6 +792,10 @@
 				{
 					ProductGroup = 9FFE70DF1DF932640035845D /* Products */;
 					ProjectRef = 9FFE70DE1DF932640035845D /* RCTBarCode.xcodeproj */;
+				},
+				{
+					ProductGroup = 9F7BD49E1E0922EB002596CD /* Products */;
+					ProjectRef = 9F7BD49D1E0922EB002596CD /* RCTCameraRoll.xcodeproj */;
 				},
 				{
 					ProductGroup = 00C302B61ABCB90400DB3ED1 /* Products */;
@@ -850,6 +939,20 @@
 			remoteRef = 832341B41AAA6A8300B99B32 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		9F7BD4A81E0922EC002596CD /* libRCTCameraRoll.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTCameraRoll.a;
+			remoteRef = 9F7BD4A71E0922EC002596CD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9FA54E641E0D1AB0006DA962 /* libRCTAliPay.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTAliPay.a;
+			remoteRef = 9FA54E631E0D1AB0006DA962 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		9FFE70A21DF92CA70035845D /* libRCTImage-tvOS.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -955,6 +1058,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FA54E4E1E0D18AE006DA962 /* AlipaySDK.bundle in Resources */,
 				9FFE71171DF939270035845D /* AMap.bundle in Resources */,
 				9FFE70DD1DF9325F0035845D /* beep.wav in Resources */,
 				9FFE712B1DF93D960035845D /* icon_location@2x.png in Resources */,
@@ -1063,6 +1167,7 @@
 					"$(SRCROOT)/../node_modules/react-native/React/**",
 					"$(SRCROOT)/../node_modules/react-native/ReactCommon/**",
 					"$(SRCROOT)/../node_modules/react-native-smart-splash-screen/ios/RCTSplashScreen/RCTSplashScreen/**",
+					"$(SRCROOT)/../node_modules/react-native-smart-alipay/ios/RCTAliPay/RCTAliPay/**",
 				);
 				INFOPLIST_FILE = ReactNativeComponentDemos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1093,6 +1198,7 @@
 					"$(SRCROOT)/../node_modules/react-native/React/**",
 					"$(SRCROOT)/../node_modules/react-native/ReactCommon/**",
 					"$(SRCROOT)/../node_modules/react-native-smart-splash-screen/ios/RCTSplashScreen/RCTSplashScreen/**",
+					"$(SRCROOT)/../node_modules/react-native-smart-alipay/ios/RCTAliPay/RCTAliPay/**",
 				);
 				INFOPLIST_FILE = ReactNativeComponentDemos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

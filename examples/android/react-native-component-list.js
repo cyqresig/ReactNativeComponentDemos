@@ -64,6 +64,8 @@ import AppEventListenerEnhance from 'react-native-smart-app-event-listener-enhan
 import TimerEnhance from 'react-native-smart-timer-enhance'
 import AMapLocation from 'react-native-smart-amap-location'
 
+import PaymentDemo from '../react-native-payment/alipay'
+
 const contentPaddingLeft = 12
 
 const styles = StyleSheet.create({
@@ -329,6 +331,12 @@ let componentData = {
             title: '地图-单次定位',
             component: AMapAlone,
         },
+    },
+    'payment 支付': {
+        'alipay (支付宝快捷支付)': {
+            title: 'alipay (支付宝快捷支付)',
+            component: PaymentDemo
+        }
     },
 
 
