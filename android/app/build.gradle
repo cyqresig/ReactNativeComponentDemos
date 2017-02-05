@@ -156,12 +156,9 @@ dependencies {
     compile "com.android.support:appcompat-v7:23.0.1"
     compile "com.facebook.react:react-native:+"  // From node_modules
     compile project(':react-native-smart-splashscreen')
-    compile project(':react-native-smart-swipe-refresh-layout')
     compile project(':react-native-smart-barcode')
     compile project(':react-native-smart-image-loader')
-    compile project(':react-native-smart-amap-location')
-    compile project(':react-native-smart-amap')
-    compile project(':react-native-smart-alipay')
+    compile project(':react-native-smart-swipe-refresh-layout')
 }
 
 // Run this once to be able to run the application with BUCK

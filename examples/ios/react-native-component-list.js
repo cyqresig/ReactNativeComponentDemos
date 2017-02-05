@@ -54,15 +54,15 @@ import Toast from '../react-native-smart-toast/toast-text'
 import LoadingSpinnerOverLay from '../react-native-smart-loading-spinner-overlay/loading-spinner-overlay'
 import Barcode from '../react-native-smart-barcode/fullscreen'
 import AppEventListenerEnhanceDemo from '../react-native-smart-app-event-listener-enhance/app-event-listener-enhance'
-import AMapLocationAlone from '../react-native-smart-amap-location/amap-location-alone-ios'
-import AMapLocationSerial from '../react-native-smart-amap-location/amap-location-serial-ios'
-import AMapAlone from '../react-native-smart-amap/amap-alone'
+//import AMapLocationAlone from '../react-native-smart-amap-location/amap-location-alone-ios'
+//import AMapLocationSerial from '../react-native-smart-amap-location/amap-location-serial-ios'
+//import AMapAlone from '../react-native-smart-amap/amap-alone'
 
 import AppEventListenerEnhance from 'react-native-smart-app-event-listener-enhance'
 import TimerEnhance from 'react-native-smart-timer-enhance'
-import AMapLocation from 'react-native-smart-amap-location'
+//import AMapLocation from 'react-native-smart-amap-location'
 
-import PaymentDemo from '../react-native-payment/alipay'
+//import PaymentDemo from '../react-native-payment/alipay'
 
 const contentPaddingLeft = 12
 
@@ -305,28 +305,28 @@ let componentData = {
             component: AppEventListenerEnhanceDemo,
         },
     },
-    'amap-location (高德定位)': {
-        'amap-location-alone': {
-            title: '单次定位(不依赖地图)',
-            component: AMapLocationAlone,
-        },
-        'amap-location-serial': {
-            title: '连续定位(不依赖地图)',
-            component: AMapLocationSerial,
-        },
-    },
-    'amap (高德地图)': {
-        'amap-alone': {
-            title: '地图-单次定位',
-            component: AMapAlone,
-        },
-    },
-    'payment 支付': {
-        'alipay (支付宝快捷支付)': {
-            title: 'alipay (支付宝快捷支付)',
-            component: PaymentDemo
-        }
-    },
+    //'amap-location (高德定位)': {
+    //    'amap-location-alone': {
+    //        title: '单次定位(不依赖地图)',
+    //        component: AMapLocationAlone,
+    //    },
+    //    'amap-location-serial': {
+    //        title: '连续定位(不依赖地图)',
+    //        component: AMapLocationSerial,
+    //    },
+    //},
+    //'amap (高德地图)': {
+    //    'amap-alone': {
+    //        title: '地图-单次定位',
+    //        component: AMapAlone,
+    //    },
+    //},
+    //'payment 支付': {
+    //    'alipay (支付宝快捷支付)': {
+    //        title: 'alipay (支付宝快捷支付)',
+    //        component: PaymentDemo
+    //    }
+    //},
 
 
 }
@@ -377,36 +377,36 @@ class ReactNativeComponentList extends Component {
         );
     }
 
-    componentDidMount() {
-        let currentRoute = this.props.navigator.navigationContext._currentRoute
-        let viewAppearCallBack = (event) => {
-            //didfocus emit in componentDidMount
-            if (currentRoute === event.data.route) {
-                console.log("self didAppear")
-            } else {
-                console.log("self didDisappear, other didAppear")
-            }
-            //console.log(currentRoute)
-            //console.log(event.data.route)
-            this.setTimeout( () => {
-                AMapLocation.init(null)
-                AMapLocation.getLocation()
-                didFocusListener.remove()
-            }, 500)
-        }
-
-        let didFocusListener = this.props.navigator.navigationContext.addListener('didfocus', viewAppearCallBack)
-        this.addAppEventListener(
-            //this.props.navigator.navigationContext.addListener('willfocus', viewAppearCallBack),
-            didFocusListener,
-            NativeAppEventEmitter.addListener('amap.location.onLocationResult', this._onLocationResult)
-        )
-    }
-
-    componentWillUnmount () {
-        //停止并销毁定位服务
-        AMapLocation.cleanUp()
-    }
+    //componentDidMount() {
+    //    let currentRoute = this.props.navigator.navigationContext._currentRoute
+    //    let viewAppearCallBack = (event) => {
+    //        //didfocus emit in componentDidMount
+    //        if (currentRoute === event.data.route) {
+    //            console.log("self didAppear")
+    //        } else {
+    //            console.log("self didDisappear, other didAppear")
+    //        }
+    //        //console.log(currentRoute)
+    //        //console.log(event.data.route)
+    //        this.setTimeout( () => {
+    //            AMapLocation.init(null)
+    //            AMapLocation.getLocation()
+    //            didFocusListener.remove()
+    //        }, 500)
+    //    }
+    //
+    //    let didFocusListener = this.props.navigator.navigationContext.addListener('didfocus', viewAppearCallBack)
+    //    this.addAppEventListener(
+    //        //this.props.navigator.navigationContext.addListener('willfocus', viewAppearCallBack),
+    //        didFocusListener,
+    //        NativeAppEventEmitter.addListener('amap.location.onLocationResult', this._onLocationResult)
+    //    )
+    //}
+    //
+    //componentWillUnmount () {
+    //    //停止并销毁定位服务
+    //    AMapLocation.cleanUp()
+    //}
 
     _onLocationResult = (result) => {
         if(result.error) {
@@ -465,9 +465,9 @@ class ReactNativeComponentList extends Component {
             title: rowData.title,
             component: rowData.component,
         }
-        if(rowData.component === AMapAlone) {
-            navigatorProps['coordinate'] = this._coordinate
-        }
+        //if(rowData.component === AMapAlone) {
+        //    navigatorProps['coordinate'] = this._coordinate
+        //}
 
         this.props.navigator.push(navigatorProps)
         //console.log('a')

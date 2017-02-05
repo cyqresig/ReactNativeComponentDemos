@@ -3,15 +3,9 @@ rootProject.name = 'ReactNativeComponentDemos'
 include ':app'
 include ':react-native-smart-splashscreen'
 project(':react-native-smart-splashscreen').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-smart-splash-screen/android')
-include ':react-native-smart-swipe-refresh-layout'
-project(':react-native-smart-swipe-refresh-layout').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-smart-pull-to-refresh-listview/android')
 include ':react-native-smart-barcode'
 project(':react-native-smart-barcode').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-smart-barcode/android')
 include ':react-native-smart-image-loader'
 project(':react-native-smart-image-loader').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-smart-image-loader/android')
-include ':react-native-smart-amap-location'
-project(':react-native-smart-amap-location').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-smart-amap-location/android')
-include ':react-native-smart-amap'
-project(':react-native-smart-amap').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-smart-amap/android')
-include ':react-native-smart-alipay'
-project(':react-native-smart-alipay').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-smart-alipay/android')
+include ':react-native-smart-swipe-refresh-layout'
+project(':react-native-smart-swipe-refresh-layout').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-smart-pull-to-refresh-listview/android')
