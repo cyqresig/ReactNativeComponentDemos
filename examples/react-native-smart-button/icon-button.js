@@ -17,6 +17,22 @@ import {
 import Button from 'react-native-smart-button'
 import image_liking from '../images/liking.png'
 
+const styles = StyleSheet.create({
+    buttonStyle: {
+        margin: 10,
+        height: 40,
+        backgroundColor: 'red',
+        borderRadius: 3,
+        borderWidth: StyleSheet.hairlineWidth,
+        borderColor: 'red',
+        justifyContent: 'center',
+    },
+    buttonTextStyle: {
+        fontSize: 17,
+        color: 'white'
+    },
+});
+
 export default class BasicButton extends Component {
 
   render() {
@@ -25,18 +41,16 @@ export default class BasicButton extends Component {
 
         <Button
           touchableType={Button.constants.touchableTypes.fade}
-          style={{margin: 10, height: 40, backgroundColor: 'red', borderRadius: 3, borderWidth: StyleSheet.hairlineWidth, borderColor: 'red', justifyContent: 'center',}}
-          textStyle={{fontSize: 17, color: 'white'}}
-        >
+          style={styles.buttonStyle}
+          textStyle={styles.buttonTextStyle}>
           <Image source={image_liking} style={{width: 40, height: 40, marginRight: 3, }}/>
           icon1
         </Button>
 
         <Button
           touchableType={Button.constants.touchableTypes.fadeContent}
-          style={{margin: 10, height: 40, backgroundColor: 'red', borderRadius: 3, borderWidth: StyleSheet.hairlineWidth, borderColor: 'red', justifyContent: 'center',}}
-          textStyle={{fontSize: 17, color: 'white'}}
-        >
+          style={styles.buttonStyle}
+          textStyle={styles.buttonTextStyle}>
           <Image source={image_liking} style={{width: 40, height: 40, marginRight: 3, }}/>
           icon2
         </Button>
@@ -44,18 +58,16 @@ export default class BasicButton extends Component {
         <Button
           touchableType={Button.constants.touchableTypes.highlight}
           underlayColor={'#C90000'}
-          style={{margin: 10, justifyContent: 'center', height: 40, backgroundColor: 'red', borderRadius: 3, borderWidth: StyleSheet.hairlineWidth, borderColor: 'red', justifyContent: 'center',}}
-          textStyle={{fontSize: 17, color: 'white'}}
-        >
+          style={styles.buttonStyle}
+          textStyle={styles.buttonTextStyle}>
           <Image source={image_liking} style={{width: 40, height: 40, marginRight: 3, }}/>
           icon3
         </Button>
 
         <Button
           touchableType={Button.constants.touchableTypes.blur}
-          style={{margin: 10, justifyContent: 'center', height: 40, backgroundColor: 'red', borderRadius: 3, borderWidth: StyleSheet.hairlineWidth, borderColor: 'red', justifyContent: 'center',}}
-          textStyle={{fontSize: 17,  color: 'white'}}
-        >
+          style={styles.buttonStyle}
+          textStyle={styles.buttonTextStyle}>
           <Image source={image_liking} style={{width: 40, height: 40, marginRight: 3, }}/>
           icon4
         </Button>

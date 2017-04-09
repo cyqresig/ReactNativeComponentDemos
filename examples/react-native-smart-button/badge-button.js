@@ -17,6 +17,22 @@ import {
 import Button from 'react-native-smart-button'
 import Badge from 'react-native-smart-badge'
 
+const styles = StyleSheet.create({
+    buttonStyle: {
+        margin: 10,
+        height: 40,
+        backgroundColor: 'red',
+        borderRadius: 3,
+        borderWidth: StyleSheet.hairlineWidth,
+        borderColor: 'red',
+        justifyContent: 'center',
+    },
+    buttonTextStyle: {
+        fontSize: 17,
+        color: 'white'
+    },
+});
+
 export default class BadgeButton extends Component {
 
   render() {
@@ -25,9 +41,8 @@ export default class BadgeButton extends Component {
 
         <Button
           touchableType={Button.constants.touchableTypes.fade}
-          style={{margin: 10, height: 40, backgroundColor: 'red', borderRadius: 3, borderWidth: StyleSheet.hairlineWidth, borderColor: 'red', justifyContent: 'center',}}
-          textStyle={{fontSize: 17, color: 'white'}}
-        >
+          style={styles.buttonStyle}
+          textStyle={styles.buttonTextStyle}>
           badge2
           <Badge
             style={{ backgroundColor: '#00AAEF', marginLeft: 6, }}
@@ -38,9 +53,8 @@ export default class BadgeButton extends Component {
 
         <Button
           touchableType={Button.constants.touchableTypes.fadeContent}
-          style={{margin: 10, height: 40, backgroundColor: 'red', borderRadius: 3, borderWidth: StyleSheet.hairlineWidth, borderColor: 'red', justifyContent: 'center',}}
-          textStyle={{fontSize: 17, color: 'white'}}
-        >
+          style={styles.buttonStyle}
+          textStyle={styles.buttonTextStyle}>
           badge2
           <Badge
             style={{ backgroundColor: '#00AAEF', marginLeft: 6, }}
@@ -52,9 +66,8 @@ export default class BadgeButton extends Component {
         <Button
           touchableType={Button.constants.touchableTypes.highlight}
           underlayColor={'#C90000'}
-          style={{margin: 10, justifyContent: 'center', height: 40, backgroundColor: 'red', borderRadius: 3, borderWidth: StyleSheet.hairlineWidth, borderColor: 'red', justifyContent: 'center',}}
-          textStyle={{fontSize: 17, color: 'white'}}
-        >
+          style={styles.buttonStyle}
+          textStyle={styles.buttonTextStyle}>
           badge3
           <Badge
             style={{ backgroundColor: '#00AAEF', marginLeft: 6, }}
@@ -65,9 +78,8 @@ export default class BadgeButton extends Component {
 
         <Button
           touchableType={Button.constants.touchableTypes.blur}
-          style={{margin: 10, justifyContent: 'center', height: 40, backgroundColor: 'red', borderRadius: 3, borderWidth: StyleSheet.hairlineWidth, borderColor: 'red', justifyContent: 'center',}}
-          textStyle={{fontSize: 17,  color: 'white'}}
-        >
+          style={styles.buttonStyle}
+          textStyle={styles.buttonTextStyle}>
           badge4
           <Badge
             style={{ backgroundColor: '#00AAEF', marginLeft: 6, }}
